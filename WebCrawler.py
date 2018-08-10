@@ -59,24 +59,26 @@ class Crawler:
         next_url = urljoin("https://en.wikipedia.org", href)
         self.container.append(next_url)
 
-    def partOfSpeech(tagged, word_list):
+    def partOfSpeech(self, tagged, word_list):
         for element in tagged:
             word, tense = element
             if(tense in ['NOUN', 'VERB', 'NUM', 'ADJ']):
                 word_list.append(element)
 
-    def categorize(urlpath, word_list):
+    def categorize(self, urlpath, word_list):
+        file = open(self.handler, 'w')
         for words in sorted(word_list, key=lambda word: word[1]):
             for char in ['\'', '(', ')', ' ']:
                 if(char in words):
                     words = words.replace(char, "")
 
                 word, tense = words
-        return word, tense
+                file.write("{},{},{} \n".format(word, tense, urlpath))
+
+        file.close()
 
     def wordCrawl(self):
         word_list = list()
-        failed_count = 0
         for link in self.container:
             try:
                 url = requests.get(link)
@@ -87,20 +89,23 @@ class Crawler:
             html = url.text
             soup = bs(html, 'html.parser')
             ptags = soup.find(id="mw-content-text").find_all("p")
-            while(ptags[failed_count].get_text() != "\n"):
-                failed_count += 1
-            tag = ptags[failed_count].get_text()  # all the text from one <p>
-            words = re.sub('[^A-Za-z0-9]+', '', tag)
+            # print(ptags)
+            for ptag in ptags:
+                if(ptag == "\n"):
+                    print("Skipping \n's")
+                    pass
+                else:
+                    tag = ptag.get_text()  # all the text from one <p>
+            # print(tag)
+            words = re.sub('[^A-Za-z0-9]+', ' ', tag)
             token = nltk.word_tokenize(words)
             tagged = nltk.pos_tag(token, tagset='universal')
             self.partOfSpeech(tagged, word_list)
 
             # to append url link that leads to the word and tense information
             urlpath = urlparse(link).path
-            word, tense = self.categorize(urlpath, word_list)
-            with open(self.handler, 'w') as file:
-                file.write("{},{},{}\n".format(word, tense, urlpath))
-            file.close()
+
+            self.categorize(urlpath, word_list)
 
 
 if __name__ == '__main__':
