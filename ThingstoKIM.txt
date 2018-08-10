@@ -1,0 +1,14 @@
+there are three exceptions when
+trying to find the ahref tag in
+wikipedia website.
+
+--1. the <p> tag may be described as
+     mw-empty-tag which translates into
+    meaning that it's '\n' in string
+--2. when iterating through a <p>, <a>
+    may have a href link to a "Help:wikipedia"
+--3. every find_all for elements are
+    returned as lists.
+--4. iterate through every legit href link to
+    next url.
+    this will create a tree structure

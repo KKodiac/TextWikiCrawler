@@ -87,6 +87,8 @@ def wordCrawl(htmlContainer):
             word, typeof = element
             if(typeof in ['NOUN', 'VERB', 'NUM', 'ADJ']):
                 word_bank.append(element)
+
+        # to append url link that leads to the word and tense information
         urlpath = urllib.parse.urlparse(i).path
         for words in sorted(word_bank, key=lambda word: word[1]):
             for ch in ['\'', '(', ')', ' ']:
