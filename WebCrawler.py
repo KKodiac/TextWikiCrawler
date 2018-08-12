@@ -20,27 +20,27 @@ print(sys.version)
 
 
 class Crawler:
-    def __init__(self, container, handler, iternum):
+    def __init__(self, container, handler):
         self.container = container
         self.handler = handler
-        self.iternum = iternum
 
     def checkLegit(self, ptags):
-        # variable counting iterations when itering through list of ptags
-        pIter = 0
-        while(True):
-            if(ptags[pIter].text != "\n"):
+        for pIter, p in enumerate(ptags):
+            print("for loop running")
+            if(p.text != "\n"):
                 aIter = 0
                 atags = ptags[pIter].find_all("a", recursive=False)
-                href = atags[aIter]['href']
+                # if below throws an IndexError it means that it wasn't able to
+                # find any atags in the current p tag
+                try:
+                    href = atags[aIter]['href']
+                except IndexError:
+                    print("Wasn't able to find any href links. Skipping loop.\n")
+                    continue
                 while('/wiki/Help:' in href):
                     aIter += 1
                     href = atags[aIter]['href']
-                break
-            else:
-                pIter += 1
-
-        return href
+                return href
 
     def getLinks(self):
         try:
@@ -53,8 +53,9 @@ class Crawler:
         soup = bs(html, 'html.parser')
         div = soup.find(id="mw-content-text").find(class_="mw-parser-output")
         ptags = div.find_all("p", recursive=False)
+        print("Run checkLegit()")
         href = self.checkLegit(ptags)
-        # could have all the href links on the site in a list
+        # TODO: could have all the href links on the site in a list
         # and iter through THAT and get next_url, like a tree structure
         next_url = urljoin("https://en.wikipedia.org", href)
         self.container.append(next_url)
@@ -65,19 +66,19 @@ class Crawler:
             if(tense in ['NOUN', 'VERB', 'NUM', 'ADJ']):
                 word_list.append(element)
 
-    def categorize(self, urlpath, word_list):
-        file = open(self.handler, 'w')
+    def categorize(self, urlpath, word_list, file):
         for words in sorted(word_list, key=lambda word: word[1]):
             for char in ['\'', '(', ')', ' ']:
                 if(char in words):
                     words = words.replace(char, "")
 
-                word, tense = words
-                file.write("{},{},{} \n".format(word, tense, urlpath))
-
-        file.close()
+            word, tense = words
+            file.write("{},{},{} \n".format(word, tense, urlpath))
 
     def wordCrawl(self):
+        print(self.container)
+        file = open(self.handler, 'w')
+        file.write("Word,Tense,Link\n")
         word_list = list()
         for link in self.container:
             try:
@@ -96,7 +97,6 @@ class Crawler:
                     pass
                 else:
                     tag = ptag.get_text()  # all the text from one <p>
-            # print(tag)
             words = re.sub('[^A-Za-z0-9]+', ' ', tag)
             token = nltk.word_tokenize(words)
             tagged = nltk.pos_tag(token, tagset='universal')
@@ -105,20 +105,26 @@ class Crawler:
             # to append url link that leads to the word and tense information
             urlpath = urlparse(link).path
 
-            self.categorize(urlpath, word_list)
+            self.categorize(urlpath, word_list, file)
+        file.close()
+
+# TODO: Implement a way to read wikipedia sites with .m url (https://en.m.wikipedia.org/wiki/Centralisation)
 
 
 if __name__ == '__main__':
+    count = 0
     iter_num = int(input("How many time would you want your crawler to execute:  "))
-
-    # container = []  # container for keeping track of urls
+    link = str(
+        input("Enter url of the topic you want to crawl(full link):"))
+    container = []  # container for keeping track of urls
     # handler = "dictionary.csv"  # file for keeping track of words and its data
-    crawler1 = Crawler(
-        container=["https://en.wikipedia.org/wiki/Special:Random"], handler="data1.csv", iternum=iter_num)
+    container.append(link)
+    crawler1 = Crawler(container, handler="DataFile/data1.csv")
     ctime1 = time.time()
-    while(crawler1.getLinks()):
-        print(crawler1.container)
+    while(count < iter_num):
+        crawler1.getLinks()
         time.sleep(2)  # halt crawling(Robot.txt)
+        count += 1
     ctime2 = time.time()
     print("How long it took to crawl: {} (s)".format(ctime2-ctime1))
     wtime1 = time.time()
