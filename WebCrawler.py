@@ -26,7 +26,6 @@ class Crawler:
 
     def checkLegit(self, ptags):
         for pIter, p in enumerate(ptags):
-            print("for loop running")
             if(p.text != "\n"):
                 aIter = 0
                 atags = ptags[pIter].find_all("a", recursive=False)
@@ -55,9 +54,9 @@ class Crawler:
         ptags = div.find_all("p", recursive=False)
         print("Run checkLegit()")
         href = self.checkLegit(ptags)
+        next_url = urljoin("https://en.wikipedia.org", href)
         # TODO: could have all the href links on the site in a list
         # and iter through THAT and get next_url, like a tree structure
-        next_url = urljoin("https://en.wikipedia.org", href)
         self.container.append(next_url)
 
     def partOfSpeech(self, tagged, word_list):
@@ -127,6 +126,7 @@ if __name__ == '__main__':
         count += 1
     ctime2 = time.time()
     print("How long it took to crawl: {} (s)".format(ctime2-ctime1))
+    print("container", crawler1.container)
     wtime1 = time.time()
     crawler1.wordCrawl()
     wtime2 = time.time()
