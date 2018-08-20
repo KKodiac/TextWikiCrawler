@@ -14,6 +14,7 @@ import sys
 import re
 from urllib.parse import urljoin, urlparse
 import time
+from os.path import exists
 
 print(sys.executable)
 print(sys.version)
@@ -23,6 +24,13 @@ class Crawler:
     def __init__(self, container, handler):
         self.container = container
         self.handler = handler
+        if(exists(self.handler)):
+            file = open(self.handler, 'a')
+            self.file = file
+        else:
+            file = open(self.handler, 'w')
+            self.file = file
+            self.file.write("Word,Tense,Link\n")
 
     def checkLegit(self, ptags):
         for pIter, p in enumerate(ptags):
@@ -52,7 +60,7 @@ class Crawler:
         soup = bs(html, 'html.parser')
         div = soup.find(id="mw-content-text").find(class_="mw-parser-output")
         ptags = div.find_all("p", recursive=False)
-        print("Run checkLegit()")
+        # print("Run checkLegit()")
         href = self.checkLegit(ptags)
         next_url = urljoin("https://en.wikipedia.org", href)
         # TODO: could have all the href links on the site in a list
@@ -76,8 +84,7 @@ class Crawler:
 
     def wordCrawl(self):
         print(self.container)
-        file = open(self.handler, 'w')
-        file.write("Word,Tense,Link\n")
+        # file = open(self.handler, 'w')
         word_list = list()
         for link in self.container:
             try:
@@ -104,8 +111,8 @@ class Crawler:
             # to append url link that leads to the word and tense information
             urlpath = urlparse(link).path
 
-            self.categorize(urlpath, word_list, file)
-        file.close()
+            self.categorize(urlpath, word_list, self.file)
+        self.file.close()
 
 # TODO: Implement a way to read wikipedia sites with .m url (https://en.m.wikipedia.org/wiki/Centralisation)
 
@@ -113,12 +120,12 @@ class Crawler:
 if __name__ == '__main__':
     count = 0
     iter_num = int(input("How many time would you want your crawler to execute:  "))
-    link = str(
-        input("Enter url of the topic you want to crawl(full link):"))
+    link = str(input("Enter url of the topic you want to crawl(full link):"))
     container = []  # container for keeping track of urls
     # handler = "dictionary.csv"  # file for keeping track of words and its data
+    file_link = "DataFile/data.csv"
     container.append(link)
-    crawler1 = Crawler(container, handler="DataFile/data1.csv")
+    crawler1 = Crawler(container, handler=file_link)
     ctime1 = time.time()
     while(count < iter_num):
         crawler1.getLinks()
