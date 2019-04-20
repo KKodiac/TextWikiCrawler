@@ -15,6 +15,7 @@ import re
 from urllib.parse import urljoin, urlparse
 import time
 from os.path import exists
+import argparse
 
 print(sys.executable)
 print(sys.version)
@@ -118,16 +119,18 @@ class Crawler:
 
 
 if __name__ == '__main__':
-    count = 0
-    iter_num = int(input("How many time would you want your crawler to execute:  "))
-    link = str(input("Enter url of the topic you want to crawl(full link):"))
+    default_count = 5
+    param_count=sys.argv[1]
+    param_link=sys.argv[2]
     container = []  # container for keeping track of urls
     # handler = "dictionary.csv"  # file for keeping track of words and its data
+    if(param_count != null):
+        default_count = param_count
     file_link = "DataFile/data.csv"
-    container.append(link)
+    container.append(param_link)
     crawler1 = Crawler(container, handler=file_link)
     ctime1 = time.time()
-    while(count < iter_num):
+    while(default_count < iter_num):
         crawler1.getLinks()
         time.sleep(2)  # halt crawling(Robot.txt)
         count += 1
@@ -138,3 +141,9 @@ if __name__ == '__main__':
     crawler1.wordCrawl()
     wtime2 = time.time()
     print("How long it took to create csv file: {} (s)".format(wtime2-wtime1))
+    
+    
+    arg_help = argparse.ArgumentParser(description='\b[Wikipedia Crawler]')
+    arg_help.add_argument('integers', metavar='N', type=int, nargs='+', help='Number of crawls \n default is 5') 
+    arg_help.add_argument('link', metavar='href link', type=str, nargs=1, help='Link to wikipedia topic you want to crawl')
+                   
