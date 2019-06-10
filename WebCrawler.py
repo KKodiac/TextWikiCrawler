@@ -120,20 +120,21 @@ class Crawler:
 
 if __name__ == '__main__':
     default_count = 5
+    iter_count = 0
     param_count=sys.argv[1]
     param_link=sys.argv[2]
     container = []  # container for keeping track of urls
     # handler = "dictionary.csv"  # file for keeping track of words and its data
-    if(param_count != null):
-        default_count = param_count
+    if(param_count != None):
+        param_count = default_count
     file_link = "DataFile/data.csv"
     container.append(param_link)
     crawler1 = Crawler(container, handler=file_link)
     ctime1 = time.time()
-    while(default_count < iter_num):
+    while(iter_count < param_count):
         crawler1.getLinks()
         time.sleep(2)  # halt crawling(Robot.txt)
-        count += 1
+        iter_count += 1
     ctime2 = time.time()
     print("How long it took to crawl: {} (s)".format(ctime2-ctime1))
     print("container", crawler1.container)
