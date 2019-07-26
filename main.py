@@ -1,5 +1,10 @@
-import Crawler
+import WikiCrawler
+import argparse
+import sys
 
 if __name__ == '__main__':
-    crawler = Crawler.Crawler()
-    crawler.checkReqPackage()
+    param_filename=sys.argv[1]
+    checker = WikiCrawler.Checker(filename=param_filename)
+    checker.checkReqPackage()
+
+    
