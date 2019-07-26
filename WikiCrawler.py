@@ -1,5 +1,8 @@
 import nltk
-from pathlib import Path #--> oop approach
+from pathlib import Path 
+import nltk 
+import requests
+from bs4 import BeautifulSoup as bs4
 
 test_correct_url_ = "https://en.wikipedia.org/wiki/Wiki"
 test_wrong_url_ = "https://en.wcor.org/wiki/Wiki"
@@ -8,7 +11,6 @@ test_wrong_url_ = "https://en.wcor.org/wiki/Wiki"
 class Checker:
     def __init__(self, DIR="./DataFile/",filename=""):
         self.url = []
-        self.topic = []
         self.DIR = DIR
         self.filename = filename
         self.FILEPATH = self.DIR + self.filename
@@ -30,7 +32,11 @@ class Checker:
         if(dat_file.exists()):
             pass
         else:
-            self.FILEPATH
+            new_file = open(self.FILEPATH, 'w+')
+            new_file.write("This file is created to store crawled data\n")
+            new_file.close()
+        
 
 class Crawler:
-    pass
+    def __init__(self, topic=""):
+        self.topic = topic
