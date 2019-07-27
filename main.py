@@ -9,3 +9,6 @@ if __name__ == '__main__':
     checker.checkReqPackage()
     checker.checkFilePath()
     
+    crawler = WikiCrawler.Crawler(param_topic)
+    crawler.requestForHTML()
+    # crawler.findLink2NextTopic()

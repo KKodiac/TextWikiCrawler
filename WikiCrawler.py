@@ -3,6 +3,7 @@ from pathlib import Path
 import nltk 
 import requests
 from bs4 import BeautifulSoup as bs4
+from os import mkdir
 
 test_correct_url_ = "https://en.wikipedia.org/wiki/Wiki"
 test_wrong_url_ = "https://en.wcor.org/wiki/Wiki"
@@ -29,7 +30,11 @@ class Checker:
             
     def checkFilePath(self):
         dat_file = Path(self.FILEPATH)
-        if(dat_file.exists()):
+        try:
+            mkdir(self.DIR)
+            new_file = open(self.FILEPATH, 'a')
+        except FileExistsError:
+            print("File already exists.\n")
             pass
         else:
             new_file = open(self.FILEPATH, 'w+')
@@ -40,3 +45,27 @@ class Checker:
 class Crawler:
     def __init__(self, topic=""):
         self.topic = topic
+        self.wiki_path = "https://en.wikipedia.org/wiki/"
+        self.WIKILINK = self.wiki_path + self.topic
+        self.parags = []
+    def requestForHTML(self):
+        try:
+            url = requests.get(self.WIKILINK)
+        except ConnectionError:
+            print("You have a network problem. Recheck your connection.\n")
+            exit()
+        except TimeoutError:
+            print("Your connection timed out.\n")
+            exit()
+        html = url.text
+        soupify = bs4(html, 'html.parser')
+        print(soupify)
+        parags = soupify.find(id="mw-content-text").find(class_="mw-parser-output").find_all("p", recursive=False)
+        print(parags)
+        atags = parags.find("a", recursive=False)
+        print(atags)
+
+
+class Parser:
+    pass
+    
