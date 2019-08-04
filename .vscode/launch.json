@@ -15,8 +15,7 @@
                 "PYTHONPATH": "${workspaceRoot}"
             },
             "args": [
-                "test.csv",
-                "Korea"
+                "Korea"                
             ]
 
         }

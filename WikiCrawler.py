@@ -4,13 +4,17 @@ import nltk
 import requests
 from bs4 import BeautifulSoup as bs4
 from os import mkdir
+import json
+import re
+
 
 test_correct_url_ = "https://en.wikipedia.org/wiki/Wiki"
 test_wrong_url_ = "https://en.wcor.org/wiki/Wiki"
 
+dir ="./DataFile/"
 
 class Checker:
-    def __init__(self, DIR="./DataFile/",filename=""):
+    def __init__(self, DIR=dir,filename=""):
         self.url = []
         self.DIR = DIR
         self.filename = filename
@@ -29,7 +33,6 @@ class Checker:
         print("All SET!\n")
             
     def checkFilePath(self):
-        dat_file = Path(self.FILEPATH)
         try:
             mkdir(self.DIR)
             new_file = open(self.FILEPATH, 'a')
@@ -38,16 +41,17 @@ class Checker:
             pass
         else:
             new_file = open(self.FILEPATH, 'w+')
-            new_file.write("This file is created to store crawled data\n")
             new_file.close()
         
 
 class Crawler:
     def __init__(self, topic=""):
+        self.fileURL = dir+topic+".json"
         self.topic = topic
         self.wiki_path = "https://en.wikipedia.org/wiki/"
         self.WIKILINK = self.wiki_path + self.topic
         self.parags = []
+        self.topicList = list()
     def requestForHTML(self):
         try:
             url = requests.get(self.WIKILINK)
@@ -59,13 +63,20 @@ class Crawler:
             exit()
         html = url.text
         soupify = bs4(html, 'html.parser')
-        print(soupify)
+        # print(soupify)
         parags = soupify.find(id="mw-content-text").find(class_="mw-parser-output").find_all("p", recursive=False)
-        print(parags)
-        atags = parags.find("a", recursive=False)
-        print(atags)
-
-
+        # print(parags)
+        for link in parags:
+            if(link!=None):
+               self.topicList.append(link.find_all('a'))
+        tag_file = open(self.fileURL, 'a', encoding='utf-8')
+        for i in self.topicList:
+            for a in i:
+                if(re.match('/wiki/*', a.attrs['href'])!=None):
+                    json.dump(a.attrs, tag_file)
+        tag_file.close()
+                    
+        
 class Parser:
     pass
     

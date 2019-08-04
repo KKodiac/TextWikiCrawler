@@ -1,5 +1,5 @@
 {
-    "python.pythonPath": "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python37-32\\python.exe",
+    "python.pythonPath": "/home/kkodiac/.env/bin/python",
     "python.testing.unittestArgs": [
         "-v",
         "-s",
