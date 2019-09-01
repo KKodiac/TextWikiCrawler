@@ -11,7 +11,7 @@ import re
 test_correct_url_ = "https://en.wikipedia.org/wiki/Wiki"
 test_wrong_url_ = "https://en.wcor.org/wiki/Wiki"
 
-dir = "./DataFile/"
+dir = "./Crawler/DataFile/"
 
 
 class Checker:
@@ -39,13 +39,13 @@ class Checker:
     def checkFilePath(self):
         try:
             mkdir(self.DIR)
-            new_file = open(self.FILEPATH, 'a')
         except FileExistsError:
             print("File already exists.\n")
             pass
         else:
-            new_file = open(self.FILEPATH, 'w+')
-            new_file.close()
+            print("File created. \n")
+        new_file = open(self.FILEPATH, 'w+')
+        new_file.close()
 
 
 class Crawler:
@@ -74,7 +74,7 @@ class Crawler:
         for link in parags:
             if(link is not None):
                 self.topicList.append(link.find_all('a'))
-        tag_file = open(self.fileURL, 'a', encoding='utf-8')
+        tag_file = open(self.fileURL, 'a+', encoding='utf-8')
         tag_file.write('[\n')
         for i in self.topicList:
             for a in i:
@@ -83,11 +83,19 @@ class Crawler:
                         'title': a.attrs['title'],
                         'link': a.attrs['href']
                     }
-                    json.dump(data, tag_file, indent=3)
+                    json.dump(data, tag_file)
                     tag_file.write(',\n')
         tag_file.write('{}\n]')
         tag_file.close()
 
-class Parser:
-    pass
+class Parser(Crawler):
+    def __init__(self, topic=""):
+        Crawler.__init__(self, topic)
+    
+    def loadJson(self):
+        with open(self.fileURL, 'r', encoding='utf-8') as jsonf:
+            datas = jsonf.read()
+            datal = json.loads(datas) # datal is a list
 
+        print(datal[0]['title'])
+        print(datal[0]['link'])

@@ -2,6 +2,7 @@ import WikiCrawler
 import argparse
 import sys
 
+
 if __name__ == '__main__':
     param_topic=sys.argv[1]
     fname = param_topic+".json"
@@ -12,3 +13,6 @@ if __name__ == '__main__':
     crawler = WikiCrawler.Crawler(param_topic)
     crawler.requestForHTML()
     # crawler.findLink2NextTopic()
+
+    parser = WikiCrawler.Parser(param_topic)
+    parser.loadJson()
