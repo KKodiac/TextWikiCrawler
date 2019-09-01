@@ -96,6 +96,3 @@ class Parser(Crawler):
         with open(self.fileURL, 'r', encoding='utf-8') as jsonf:
             datas = jsonf.read()
             datal = json.loads(datas) # datal is a list
-
-        print(datal[0]['title'])
-        print(datal[0]['link'])
