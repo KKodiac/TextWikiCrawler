@@ -68,9 +68,9 @@ class Crawler:
             exit()
         html = url.text
         soupify = bs4(html, 'html.parser')
-        # print(soupify)
         parags = soupify.find(id="mw-content-text").find(class_="mw-parser-output").find_all("p", recursive=False)
-        # print(parags)
+        
+        ### Crawls for url links on Topic wiki page
         for link in parags:
             if(link is not None):
                 self.topicList.append(link.find_all('a'))
@@ -88,6 +88,7 @@ class Crawler:
         tag_file.write('{}\n]')
         tag_file.close()
 
+            
 class Parser(Crawler):
     def __init__(self, topic=""):
         Crawler.__init__(self, topic)
@@ -96,3 +97,4 @@ class Parser(Crawler):
         with open(self.fileURL, 'r', encoding='utf-8') as jsonf:
             datas = jsonf.read()
             datal = json.loads(datas) # datal is a list
+        return datal
