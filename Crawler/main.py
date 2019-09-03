@@ -15,4 +15,4 @@ if __name__ == '__main__':
     # crawler.findLink2NextTopic()
 
     parser = WikiCrawler.Parser(param_topic)
-    print(parser.loadJson())
+    parser.returnData()

@@ -7,7 +7,7 @@ from os import mkdir
 import json
 import re
 
-
+wiki_url = "https://en.wikipedia.org"
 test_correct_url_ = "https://en.wikipedia.org/wiki/Wiki"
 test_wrong_url_ = "https://en.wcor.org/wiki/Wiki"
 
@@ -98,3 +98,14 @@ class Parser(Crawler):
             datas = jsonf.read()
             datal = json.loads(datas) # datal is a list
         return datal
+
+    def returnData(self):
+        print("----------------------------------\n")
+        print("HERE ARE THE KEY WORD RESULTS\n")
+        print("----------------------------------\n")
+        for data in self.loadJson():
+            try:
+                print("TITLE: {} ==> WIKI LINK: {} \n\n".format(data['title'], wiki_url + data['link']))
+            except KeyError:
+                pass
+
