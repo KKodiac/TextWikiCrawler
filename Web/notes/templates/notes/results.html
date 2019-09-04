@@ -1,0 +1,9 @@
+{% if show_topic %}
+    <ul>
+        {% for topic in show_topic %}
+        <li><a href="/notes/{{id}}/">{{topic.topic_input}}</a></li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>No notes are available.</p>
+{% endif %}
