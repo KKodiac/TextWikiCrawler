@@ -76,7 +76,7 @@ class Crawler:
             if(link is not None):
                 self.topicList.append(link.find_all('a'))
         tag_file = open(self.fileURL, 'a+', encoding='utf-8')
-        tag_file.write('[\n')
+        tag_file.write('[')
         for i in self.topicList:
             for a in i:
                 if(re.match('/wiki/*', a.attrs['href']) is not None):
@@ -85,8 +85,8 @@ class Crawler:
                         'link': a.attrs['href']
                     }
                     json.dump(data, tag_file)
-                    tag_file.write(',\n')
-        tag_file.write('{}\n]')
+                    tag_file.write(',')
+        tag_file.write('{}]')
         tag_file.close()
 
             
