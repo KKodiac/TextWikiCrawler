@@ -15,4 +15,8 @@ class Topic(models.Model):
         return self.pub_time >= timezone.now() - datetime.timedelta(days=1)
 
     
-
+class Data(models.Model):
+    title = models.TextField()
+    link = models.URLField()
+    def __str__(self):
+        return self.title, self.link

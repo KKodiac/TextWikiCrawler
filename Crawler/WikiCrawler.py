@@ -6,6 +6,7 @@ from bs4 import BeautifulSoup as bs4
 from os import mkdir
 import json
 import re
+import sqlite3
 
 wiki_url = "https://en.wikipedia.org"
 test_correct_url_ = "https://en.wikipedia.org/wiki/Wiki"
@@ -101,6 +102,7 @@ class Parser(Crawler, Checker):
             datal = json.loads(datas) # datal is a list
         return datal
 
+    ### FOR TEST RETURNS ###
     def returnData(self):
         print("----------------------------------\n")
         print("HERE ARE THE KEY WORD RESULTS\n")
@@ -115,3 +117,13 @@ class Parser(Crawler, Checker):
         self.checkReqPackage()
         self.checkFilePath()
         self.requestForHTML()
+
+    def addToSQL(self):
+        SQLPATH = "../Web/db.sqlite3"
+        db = sqlite3.connect(SQLPATH)
+        data = self.loadJson()
+        columns = ['title', 'link']
+        for d in data:
+            keys = tuple(d[c] for c in columns)
+            c = db.cursor()
+            c.execute(keys)
