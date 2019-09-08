@@ -89,9 +89,11 @@ class Crawler:
         tag_file.close()
 
             
-class Parser(Crawler):
-    def __init__(self, topic=""):
-        Crawler.__init__(self, topic)
+class Parser(Crawler, Checker):
+    def __init__(self, main_topic):
+        fname = main_topic+".json"
+        Checker.__init__(self, filename=fname)
+        Crawler.__init__(self, main_topic)
     
     def loadJson(self):
         with open(self.fileURL, 'r', encoding='utf-8') as jsonf:
@@ -109,3 +111,7 @@ class Parser(Crawler):
             except KeyError:
                 pass
 
+    def checkRequirements(self):
+        self.checkReqPackage()
+        self.checkFilePath()
+        self.requestForHTML()
