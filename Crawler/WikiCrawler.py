@@ -77,10 +77,13 @@ class Crawler:
                 self.topicList.append(link.find_all('a'))
         tag_file = open(self.fileURL, 'a+', encoding='utf-8')
         tag_file.write('[')
+        id_count = 0
         for i in self.topicList:
             for a in i:
                 if(re.match('/wiki/*', a.attrs['href']) is not None):
+                    id_count+=1
                     data = {
+                        'id': id_count,
                         'title': a.attrs['title'],
                         'link': a.attrs['href']
                     }
@@ -119,13 +122,17 @@ class Parser(Crawler, Checker):
                 pass
 
     def addToSQL(self):
-        SQLPATH = "./Web/db.sqlite3"
+        SQLPATH = "./Web/database.sqlite3"
         db = sqlite3.connect(SQLPATH)
         data = self.loadJson()
-        columns = ['id','title', 'link']
-        query = "insert into notes_data values (?,?,?)"
-        for n,d in enumerate(data):
-            keys = tuple(n + d[c] for c in columns)
+        columns = ['id', 'title', 'link']
+        query = "INSERT OR IGNORE INTO notes_data(id,title,link) VALUES (?,?,?)"
+        for d in data:
+            try:
+                keys = tuple(str(d[c]) for c in columns)
+            except KeyError:
+                pass
             c = db.cursor()
             c.execute(query,keys)
-            c.close()
+            db.commit()
+        c.close()
