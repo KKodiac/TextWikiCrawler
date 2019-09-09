@@ -96,6 +96,11 @@ class Parser(Crawler, Checker):
         Checker.__init__(self, filename=fname)
         Crawler.__init__(self, main_topic)
     
+    def checkRequirements(self):
+        self.checkReqPackage()
+        self.checkFilePath()
+        self.requestForHTML()
+
     def loadJson(self):
         with open(self.fileURL, 'r', encoding='utf-8') as jsonf:
             datas = jsonf.read()
@@ -113,17 +118,14 @@ class Parser(Crawler, Checker):
             except KeyError:
                 pass
 
-    def checkRequirements(self):
-        self.checkReqPackage()
-        self.checkFilePath()
-        self.requestForHTML()
-
     def addToSQL(self):
-        SQLPATH = "../Web/db.sqlite3"
+        SQLPATH = "./Web/db.sqlite3"
         db = sqlite3.connect(SQLPATH)
         data = self.loadJson()
-        columns = ['title', 'link']
-        for d in data:
-            keys = tuple(d[c] for c in columns)
+        columns = ['id','title', 'link']
+        query = "insert into notes_data values (?,?,?)"
+        for n,d in enumerate(data):
+            keys = tuple(n + d[c] for c in columns)
             c = db.cursor()
-            c.execute(keys)
+            c.execute(query,keys)
+            c.close()
