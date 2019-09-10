@@ -19,4 +19,4 @@ class Data(models.Model):
     title = models.CharField(max_length=100)
     link = models.URLField()
     def __str__(self):
-        return self.title
+        return 'Topic: {} Link: {}'.format(self.title, self.link)
