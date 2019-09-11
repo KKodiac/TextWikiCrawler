@@ -23,10 +23,16 @@ def index(request, topic):
     show_topic = Topic.objects.all()
     print(show_topic)
     print(id)
+    searchTopic = request.GET.get('search')
     template = loader.get_template('notes/index.html')
     context = {
         'show_topic': show_topic,
+        'searchTopic': searchTopic,
+        'topic': topic
     }
+    
     
     return HttpResponse(template.render(context, request))
 
+def view_index(request):
+   pass
