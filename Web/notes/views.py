@@ -34,5 +34,7 @@ def index(request, topic):
     
     return HttpResponse(template.render(context, request))
 
-def view_index(request):
-   pass
+def main(request):
+    template = loader.get_template('notes/marble/index.html')
+
+    return HttpResponse(template.render())
