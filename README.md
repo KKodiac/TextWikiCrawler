@@ -1,3 +1,5 @@
+# Created while doing mendatory military service in ROKArmy GOP Unit
+
 # Wikipedia Crawler
 
 This python source code simply provides users with basic database
@@ -31,10 +33,13 @@ distintions.
 *Tense: _NOUN_ for nouns, _ADJ_ for adjectives, _VERB_ for verbs, and _NUM_ for numbers
 *Path: url path to the wikipedia page where the word was found
 
+## Notes
+From django framework, will be working on Notes creater that automatically create notes involving a topic that
+a user desires.
+
 
 ## Contact 
 
-If anyone is awesome enough to contact me for any questions revolving around 
+If anyone is interested enough to contact me for any questions revolving around 
 this project, feel free to contact me via e-mail **seanhong2000@gmail.com**
-You are Awesome
-So have a great day!!
+
