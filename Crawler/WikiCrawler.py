@@ -13,14 +13,15 @@ test_correct_url_ = "https://en.wikipedia.org/wiki/Wiki"
 test_wrong_url_ = "https://en.wcor.org/wiki/Wiki"
 
 dir = "./Crawler/DataFile/"
-
+word_dir = "./Crawler/TenseFile"
 
 class Checker:
-    def __init__(self, DIR=dir, filename=""):
+    def __init__(self, DIR=dir, filename="", WORD_DIR=word_dir):
         self.url = []
         self.DIR = DIR
         self.filename = filename
         self.FILEPATH = self.DIR + self.filename
+        self.FILEPATH2 = self.WORD_DIR + self.filename
 
     def checkReqPackage(self):
         requirements = [
@@ -40,13 +41,16 @@ class Checker:
     def checkFilePath(self):
         try:
             mkdir(self.DIR)
+            mkdir(self.WORD_DIR)
         except FileExistsError:
             print("File already exists.\n")
             pass
         else:
             print("File created. \n")
         new_file = open(self.FILEPATH, 'w+')
+        new_file2 = open(self.FILEPATH2, 'w+')
         new_file.close()
+        new_file2.close()
 
 
 class Crawler:
@@ -136,3 +140,5 @@ class Parser(Crawler, Checker):
             c.execute(query,keys)
             db.commit()
         c.close()
+
+
