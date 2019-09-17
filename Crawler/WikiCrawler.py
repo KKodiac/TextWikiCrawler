@@ -3,7 +3,7 @@ from pathlib import Path
 import nltk
 import requests
 from bs4 import BeautifulSoup as bs4
-from os import mkdir
+from os import mkdir, path
 import json
 import re
 import sqlite3
@@ -13,15 +13,16 @@ test_correct_url_ = "https://en.wikipedia.org/wiki/Wiki"
 test_wrong_url_ = "https://en.wcor.org/wiki/Wiki"
 
 dir = "./Crawler/DataFile/"
-word_dir = "./Crawler/TenseFile"
+word_dir = "./Crawler/TenseFile/"
 
 class Checker:
     def __init__(self, DIR=dir, filename="", WORD_DIR=word_dir):
         self.url = []
         self.DIR = DIR
         self.filename = filename
+        self.WORD_DIR = WORD_DIR
         self.FILEPATH = self.DIR + self.filename
-        self.FILEPATH2 = self.WORD_DIR + self.filename
+        self.FILEPATH2 = self.WORD_DIR + '_' + self.filename
 
     def checkReqPackage(self):
         requirements = [
@@ -39,19 +40,30 @@ class Checker:
         print("All SET!\n")
 
     def checkFilePath(self):
+        print("Checking Directory...\n")
         try:
             mkdir(self.DIR)
             mkdir(self.WORD_DIR)
         except FileExistsError:
-            print("File already exists.\n")
+            print("Directory exists.\n")
             pass
-        else:
-            print("File created. \n")
-        new_file = open(self.FILEPATH, 'w+')
-        new_file2 = open(self.FILEPATH2, 'w+')
-        new_file.close()
-        new_file2.close()
 
+        print("Checking for reference file...\n")
+        if(path.exists(self.FILEPATH)):
+            print("Reference file exists.\n")
+        else:
+            print("Creating a reference file.\n")
+            f = open(self.FILEPATH, 'w+')
+            f.close()
+
+        print("Checking for language file...\n")
+        if(path.exists(self.FILEPATH2)):
+            print("Language file exists.\n")
+        else:
+            print("Creating a language file.\n")
+            f = open(self.FILEPATH2, 'w+')
+            f.close()
+            
 
 class Crawler:
     def __init__(self, topic=""):
