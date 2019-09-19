@@ -35,6 +35,6 @@ def index(request, topic):
     return HttpResponse(template.render(context, request))
 
 def main(request):
-    template = loader.get_template('notes/marble/index.html')
+    template = loader.get_template('notes/index.html')
 
     return HttpResponse(template.render())

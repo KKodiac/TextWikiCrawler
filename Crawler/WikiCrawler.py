@@ -63,7 +63,7 @@ class Checker:
             print("Creating a language file.\n")
             f = open(self.FILEPATH2, 'w+')
             f.close()
-            
+
 
 class Crawler:
     def __init__(self, topic=""):
@@ -107,7 +107,7 @@ class Crawler:
                     tag_file.write(',')
         tag_file.write('{}]')
         tag_file.close()
-
+    
             
 class Parser(Crawler, Checker):
     def __init__(self, main_topic):
