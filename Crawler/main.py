@@ -8,4 +8,4 @@ if __name__ == '__main__':
     parser = WikiCrawler.Parser(param_topic)
     parser.checkRequirements()
     parser.returnData()
-    parser.addToSQL()
+    # parser.addToSQL()

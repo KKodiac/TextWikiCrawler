@@ -1,0 +1,16 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <p>{{request.GET.results}}</p>
+        {% if show_data %}
+        <ul>
+            {% for data in show_data %}
+            <li><h2>{{data}}</h2></li>
+            {% endfor %}
+        </ul>
+        {% else %}
+            <p>No data available for KOREA</p>
+        {% endif %}
+    </body>
+</html>W

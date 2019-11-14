@@ -25,7 +25,7 @@ SECRET_KEY = 'e4og_oyznbv=f4cy6u9dt$o931ccdbb6@1q$(%n3mfi*$d&+b7'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['8f45fafc5f674ec2ab57726886b25cdd.vfs.cloud9.us-east-1.amazonaws.com']
 
 
 # Application definition
@@ -56,7 +56,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [os.path.join(BASE_DIR, 'templates')],
-        'APP_DIRS': False,
+        'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
