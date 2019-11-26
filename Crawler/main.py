@@ -7,5 +7,6 @@ if __name__ == '__main__':
     param_topic=sys.argv[1]
     parser = WikiCrawler.Parser(param_topic)
     parser.checkRequirements()
-    parser.returnData()
+    # parser.returnData()
+    
     # parser.addToSQL()
