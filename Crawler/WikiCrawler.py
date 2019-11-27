@@ -14,16 +14,20 @@ test_wrong_url_ = "https://en.wcor.org/wiki/Wiki"
 dir = "../Crawler/DataFile/"
 word_dir = "../Crawler/TenseFile/"
 toc_dir = "../Crawler/TOC/"
+wpd_dir = "../Crawler/WikiPageDocument/"
+
 class Checker:
-    def __init__(self, DIR=dir, filename="", WORD_DIR=word_dir, TOC_DIR=toc_dir):
+    def __init__(self, DIR=dir, filename="", WORD_DIR=word_dir, TOC_DIR=toc_dir, WPD_DIR=wpd_dir):
         self.url = []
         self.DIR = DIR
         self.TOC_DIR = TOC_DIR
         self.filename = filename
         self.WORD_DIR = WORD_DIR
-        self.FILEPATH = self.DIR + self.filename
-        self.FILEPATH2 = self.WORD_DIR + '_' + self.filename
-        self.TOCPATH = self.TOC_DIR + '_' + self.filename
+        self.WPD_DIR = WPD_DIR
+        self.FILEPATH = self.DIR + self.filename +".json"
+        self.FILEPATH2 = self.WORD_DIR + '_' + self.filename + ".json"
+        self.TOCPATH = self.TOC_DIR + '_' + self.filename + ".json"
+        self.WPDPATH = self.WPD_DIR + self.filename + ".txt"
     def checkReqPackage(self):
         requirements = [
             'punkt', 'universal_tagset', 'averaged_perceptron_tagger'
@@ -45,6 +49,7 @@ class Checker:
             mkdir(self.DIR)
             mkdir(self.WORD_DIR)
             mkdir(self.TOC_DIR)
+            mkdir(self.WPD_DIR)
         except FileExistsError:
             print("Directory exists.\n")
             pass
@@ -62,6 +67,7 @@ class Checker:
         print("Checking for language file...\n")
         if(path.exists(self.FILEPATH2)):
             print("Language file exists.\n")
+            return
         else:
             print("Creating a language file.\n")
             f = open(self.FILEPATH2, 'w+')
@@ -70,9 +76,21 @@ class Checker:
         print("Checking for Table of Contents(TOC) file...\n")
         if(path.exists(self.TOCPATH)):
             print("TOC file exists.\n")
+            return
+            
         else:
             print("Creating a TOC file.\n")
             f = open(self.TOCPATH, 'w+')
+            f.close()
+        
+        print("Checking for Wiki Page Document(WPD) file...\n")
+        if(path.exists(self.WPDPATH)):
+            print("WPD file exists.\n")
+            return
+            
+        else:
+            print("Creating a WPD file.\n")
+            f = open(self.WPDPATH, 'w+')
             f.close()
 
 
@@ -80,6 +98,7 @@ class Crawler:
     def __init__(self, topic=""):
         self.fileURL = dir + topic + ".json"
         self.tocfileURL = toc_dir + topic + ".json"
+        self.wpdfileURL = wpd_dir + topic + ".txt"
         self.topic = topic
         self.wiki_path = "https://en.wikipedia.org/wiki/"
         self.WIKILINK = self.wiki_path + self.topic
@@ -132,12 +151,15 @@ class Crawler:
         ### Crawls for TOC on a wikipediac page
         toc_list_ul = []
         toc_list = []
-        for toc in table_of_contents.find_all('li'):
-            # print(toc.ul)
-            for x in toc.get_text().split('\n'):
-                if(x != ""):
-                    toc_list_ul.append(x)
-        
+        try:
+            for toc in table_of_contents.find_all('li'):
+                # print(toc.ul)
+                for x in toc.get_text().split('\n'):
+                    if(x != ""):
+                        toc_list_ul.append(x)
+        except AttributeError:
+            pass
+
         for i in toc_list_ul:
             if(i not in toc_list):
                 
@@ -148,25 +170,48 @@ class Crawler:
             index = int(i[0]) - 1
             temp[index].append(i)
         
-        cluster = [x for x in temp if x != []]
+        # cluster = [x for x in temp if x != []]
         
         
-        ### Creating a json formatted Bullet Pointed TOC
-        json_struct = {
-            "Topic":{
-                "name" : '',
-                "BP" : {
-                    "main_BP" : '',
-                    # Numbers sorted 
-                    "sub-BP" : {}
+        # ### Creating a json formatted Bullet Pointed TOC
+        # json_struct = {
+        #     "Topic":{
+        #         "name" : '',
+        #         "BP" : {
+        #             "main_BP" : '',
+        #             # Numbers sorted 
+        #             "sub-BP" : {}
                     
-                }
-            }
-        }
+        #         }
+        #     }
+        # }
+    
+# gets document content from desired topic
+
+    def requestWikiPageDoc(self):
+        soupify = self.requestForHTML()
+        get_document_content = soupify.find(id="mw-content-text").find(class_="mw-parser-output")
+        tags = get_document_content.find_all(['p','h2','h3'])
+        print(tags)
+        f = open(self.wpdfileURL, 'w+')
+
+        for tag in tags:
+            text = tag.text
+            try:
+                f.write(text)
+            except:
+                pass
+            f.write("\n")
+
+ 
+        f.close()
             
+
+
+
 class Parser(Crawler, Checker):
     def __init__(self, main_topic):
-        fname = main_topic+".json"
+        fname = main_topic
         Checker.__init__(self, filename=fname)
         Crawler.__init__(self, main_topic)
     
@@ -175,7 +220,8 @@ class Parser(Crawler, Checker):
         self.checkFilePath()
         self.requestPageData()
         self.requestTOC()
-        self.requestTP()
+        self.requestWikiPageDoc()
+        # self.requestTP()
 
     def loadJson(self):
         with open(self.fileURL, 'r', encoding='utf-8') as jsonf:

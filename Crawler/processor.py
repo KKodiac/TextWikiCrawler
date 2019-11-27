@@ -1,24 +1,15 @@
 import nltk
-import requests
-from bs4 import BeautifulSoup as bs4
 
-class Processor:
-    def __init__(self, page=""):
-        self.page = page
-        self.url = requests.get(self.page)
+class Processor():
+    def __init__(self, topic_name="", folder_path="./WikiPageDocument/", file_extension=".txt"):
+        self.file_path = folder_path + topic_name + file_extension
         
-    def nlp_process(self):
-        html = self.url.text
-        soupify = bs4(html,'html.parser')
-        paragraphs = []
-        split_sentence = []
-        content = soupify.find(class_="mw-parser-output").find_all('p')
-        paragraphs = [text for text in content if text.get_text() != "\n"]
-        split_sentence = [sent.split('. ') for sent in paragraphs]
-        for i in split_sentence:
-            for j in i:
-                
-        print(split_sentence)
-
-p = Processor("https://en.wikipedia.org/wiki/Korea")
-p.nlp_process()
+    def processor(self):
+        
+        with open(self.file_path, 'r') as file:
+            content = file.readlines()
+            content = [ct for ct in content if ct != "\n"]
+            tokenizer = nltk.tokenize.word_tokenize
+            content_matrix = [[tokenizer(line)] for line in content]
+            print(content_matrix[0])
+        file.close()
