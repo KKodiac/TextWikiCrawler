@@ -3,7 +3,6 @@ bs4==0.0.1
 certifi==2019.6.16
 chardet==3.0.4
 colorama==0.4.1
-Django
 idna==2.8
 isort==4.3.21
 nltk==3.4.5
