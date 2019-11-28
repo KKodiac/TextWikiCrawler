@@ -1,5 +1,5 @@
 # Created while doing mendatory military service in ROKArmy GOP Unit
-
+# This branch has removed Web Integration
 # Wikipedia Crawler
 
 This python source code simply provides users with basic database
