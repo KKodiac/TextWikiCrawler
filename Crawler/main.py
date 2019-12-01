@@ -1,5 +1,5 @@
 from WikiCrawler import Parser
-from Processor import *
+from Processor import Processor
 import argparse
 import sys
 

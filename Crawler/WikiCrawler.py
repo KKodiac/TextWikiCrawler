@@ -12,32 +12,35 @@ test_correct_url_ = "https://en.wikipedia.org/wiki/Wiki"
 test_wrong_url_ = "https://en.wcor.org/wiki/Wiki"
 
 dir = "../Crawler/DataFile/"
-word_dir = "../Crawler/TenseFile/"
-toc_dir = "../Crawler/TOC/"
-wpd_dir = "../Crawler/WikiPageDocument/"
+tense_dir = "../Crawler/DataFile/TenseFile/"
+toc_dir = "../Crawler/DataFile/TOC/"
+wpd_dir = "../Crawler/DataFile/WikiPageDocument/"
+wd_dir = "../Crawler/DataFile/TokenData/"
 
 class Checker:
-    def __init__(self, DIR=dir, filename="", WORD_DIR=word_dir, TOC_DIR=toc_dir, WPD_DIR=wpd_dir):
+    def __init__(self, DIR=dir, filename="", WORD_DIR=tense_dir, TOC_DIR=toc_dir, WPD_DIR=wpd_dir, WD_DIR=wd_dir):
         self.url = []
         self.DIR = DIR
         self.TOC_DIR = TOC_DIR
         self.filename = filename
         self.WORD_DIR = WORD_DIR
         self.WPD_DIR = WPD_DIR
+        self.WD_DIR = WD_DIR
         self.FILEPATH = self.DIR + self.filename +".json"
         self.FILEPATH2 = self.WORD_DIR + '_' + self.filename + ".json"
         self.TOCPATH = self.TOC_DIR + '_' + self.filename + ".json"
         self.WPDPATH = self.WPD_DIR + self.filename + ".txt"
+        self.WDPATH = self.WD_DIR + self.filename + ".csv"
     def checkReqPackage(self):
         requirements = [
-            'punkt', 'universal_tagset', 'averaged_perceptron_tagger'
+            'punkt', 'universal_tagset', 'averaged_perceptron_tagger', 'stopwords'
         ]
         pack = nltk.downloader.Downloader()
         for mod in requirements:
             if(pack.is_installed(mod)):
                 pass
             else:
-                print("Not all the required nltk packages are installed!\n")
+                print("\nNot all the required nltk packages are installed!\n")
                 print("Downloading uninstalled content....\n")
                 pack.download(info_or_id=mod)
                 print("Download complete!\n")
@@ -50,6 +53,7 @@ class Checker:
             mkdir(self.WORD_DIR)
             mkdir(self.TOC_DIR)
             mkdir(self.WPD_DIR)
+            mkdir(self.WD_DIR)
         except FileExistsError:
             print("Directory exists.\n")
             pass
@@ -93,6 +97,15 @@ class Checker:
             f = open(self.WPDPATH, 'w+')
             f.close()
 
+        print("Checking for Word Token(WD) file...\n")
+        if(path.exists(self.WDPATH)):
+            print("WPD file exists.\n")
+            return
+            
+        else:
+            print("Creating a WPD file.\n")
+            f = open(self.WDPATH, 'w+')
+            f.close()
 
 class Crawler:
     def __init__(self, topic=""):
