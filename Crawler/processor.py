@@ -19,16 +19,26 @@ class Processor():
             stop_words_set = set(nltk.corpus.stopwords.words('english'))
             
             total_sent = [words.lower() for sent in content_matrix for words in sent if not words in stop_words_set]
-            print(total_sent)
+            # print(total_sent)
             fdist = nltk.probability.FreqDist(total_sent) 
-            fdist.plot(30)
-            plt.show()
+            print(fdist["korea"])
+            
+            print(fdist.keys())
+            print(fdist.items())
+            # fdist.plot(30)
+            # plt.show()
                 
         file.close()
         
-        with open(self.atoken_file_path, 'w+') as file:
-            wr = csv.writer(file, dialect='excel')
-            wr.writerow(total_sent)
-        
+        with open(self.atoken_file_path, 'w+', newline="") as file:
+            writer = csv.writer(file)
+            writer.writerow(["Words", "Word Frequency"])
+            for key, value in fdist.items():
+                writer.writerow([key, value])
 
+        """ TO read back
+        with open(self.atoken_file_path, 'r') as file:
+            reader = csv.reader()
+            fdist_dict = dict(reader)
+        """
         file.close()
