@@ -32,7 +32,7 @@ class Processor():
         
         with open(self.atoken_file_path, 'w+', newline="") as file:
             writer = csv.writer(file)
-            writer.writerow(["Words", "Word Frequency"])
+            writer.writerow(["Words", "Word Frequency", "Part of Speech"])
             for key, value in fdist.items():
                 writer.writerow([key, value])
 
