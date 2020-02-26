@@ -1,0 +1,375 @@
+{
+    "KeyPhrases": [
+        {
+            "BeginOffset": 7,
+            "EndOffset": 21,
+            "Score": 0.9999998807907104,
+            "Text": "the first half"
+        },
+        {
+            "BeginOffset": 25,
+            "EndOffset": 43,
+            "Score": 1.0,
+            "Text": "the 1st millennium"
+        },
+        {
+            "BeginOffset": 45,
+            "EndOffset": 50,
+            "Score": 0.9999995231628418,
+            "Text": "Korea"
+        },
+        {
+            "BeginOffset": 71,
+            "EndOffset": 97,
+            "Score": 0.9999995827674866,
+            "Text": "the three competing states"
+        },
+        {
+            "BeginOffset": 101,
+            "EndOffset": 128,
+            "Score": 0.9955889582633972,
+            "Text": "Goguryeo, Baekje, and Silla"
+        },
+        {
+            "BeginOffset": 148,
+            "EndOffset": 167,
+            "Score": 0.9999568462371826,
+            "Text": "the \"Three Kingdoms"
+        },
+        {
+            "BeginOffset": 171,
+            "EndOffset": 176,
+            "Score": 0.9997144341468811,
+            "Text": "Korea"
+        },
+        {
+            "BeginOffset": 182,
+            "EndOffset": 197,
+            "Score": 0.9999999403953552,
+            "Text": "the second half"
+        },
+        {
+            "BeginOffset": 201,
+            "EndOffset": 219,
+            "Score": 1.0,
+            "Text": "the 1st millennium"
+        },
+        {
+            "BeginOffset": 221,
+            "EndOffset": 226,
+            "Score": 0.999998927116394,
+            "Text": "Silla"
+        },
+        {
+            "BeginOffset": 250,
+            "EndOffset": 269,
+            "Score": 0.9999762773513794,
+            "Text": "Baekje and Goguryeo"
+        },
+        {
+            "BeginOffset": 282,
+            "EndOffset": 308,
+            "Score": 0.99997478723526,
+            "Text": "the \"Unified Silla\" period"
+        },
+        {
+            "BeginOffset": 321,
+            "EndOffset": 327,
+            "Score": 0.9999986886978149,
+            "Text": "Balhae"
+        },
+        {
+            "BeginOffset": 338,
+            "EndOffset": 347,
+            "Score": 0.9999855160713196,
+            "Text": "the north"
+        },
+        {
+            "BeginOffset": 361,
+            "EndOffset": 376,
+            "Score": 0.9404312372207642,
+            "Text": "former Goguryeo"
+        },
+        {
+            "BeginOffset": 378,
+            "EndOffset": 391,
+            "Score": 0.9999921321868896,
+            "Text": "Unified Silla"
+        },
+        {
+            "BeginOffset": 418,
+            "EndOffset": 439,
+            "Score": 0.9999315142631531,
+            "Text": "three separate states"
+        },
+        {
+            "BeginOffset": 447,
+            "EndOffset": 456,
+            "Score": 0.9999634027481079,
+            "Text": "civil war"
+        },
+        {
+            "BeginOffset": 470,
+            "EndOffset": 494,
+            "Score": 0.9999911785125732,
+            "Text": "the Later Three Kingdoms"
+        },
+        {
+            "BeginOffset": 503,
+            "EndOffset": 510,
+            "Score": 0.9999997019767761,
+            "Text": "the end"
+        },
+        {
+            "BeginOffset": 514,
+            "EndOffset": 532,
+            "Score": 1.0,
+            "Text": "the 1st millennium"
+        },
+        {
+            "BeginOffset": 534,
+            "EndOffset": 542,
+            "Score": 0.9999997615814209,
+            "Text": "Goguryeo"
+        },
+        {
+            "BeginOffset": 562,
+            "EndOffset": 568,
+            "Score": 0.9999986886978149,
+            "Text": "Goryeo"
+        },
+        {
+            "BeginOffset": 585,
+            "EndOffset": 605,
+            "Score": 0.9999998211860657,
+            "Text": "the two other states"
+        },
+        {
+            "BeginOffset": 618,
+            "EndOffset": 638,
+            "Score": 0.9999997615814209,
+            "Text": "the Korean Peninsula"
+        },
+        {
+            "BeginOffset": 642,
+            "EndOffset": 666,
+            "Score": 0.9999991655349731,
+            "Text": "a single sovereign state"
+        },
+        {
+            "BeginOffset": 675,
+            "EndOffset": 688,
+            "Score": 0.9999999403953552,
+            "Text": "the same time"
+        },
+        {
+            "BeginOffset": 690,
+            "EndOffset": 696,
+            "Score": 0.9999997615814209,
+            "Text": "Balhae"
+        },
+        {
+            "BeginOffset": 711,
+            "EndOffset": 732,
+            "Score": 0.9999973177909851,
+            "Text": "its last crown prince"
+        },
+        {
+            "BeginOffset": 747,
+            "EndOffset": 753,
+            "Score": 0.999742329120636,
+            "Text": "Goryeo"
+        },
+        {
+            "BeginOffset": 755,
+            "EndOffset": 761,
+            "Score": 0.9435152411460876,
+            "Text": "Goryeo"
+        },
+        {
+            "BeginOffset": 779,
+            "EndOffset": 784,
+            "Score": 0.9991459846496582,
+            "Text": "Kory\u014f"
+        },
+        {
+            "BeginOffset": 787,
+            "EndOffset": 797,
+            "Score": 0.9992983937263489,
+            "Text": "whose name"
+        },
+        {
+            "BeginOffset": 813,
+            "EndOffset": 830,
+            "Score": 0.9999972581863403,
+            "Text": "the modern exonym"
+        },
+        {
+            "BeginOffset": 832,
+            "EndOffset": 837,
+            "Score": 0.9997698664665222,
+            "Text": "Korea"
+        },
+        {
+            "BeginOffset": 844,
+            "EndOffset": 867,
+            "Score": 0.9999986886978149,
+            "Text": "a highly cultured state"
+        },
+        {
+            "BeginOffset": 881,
+            "EndOffset": 890,
+            "Score": 0.9999999403953552,
+            "Text": "the world"
+        },
+        {
+            "BeginOffset": 893,
+            "EndOffset": 917,
+            "Score": 0.9993811249732971,
+            "Text": "first metal movable type"
+        },
+        {
+            "BeginOffset": 921,
+            "EndOffset": 925,
+            "Score": 0.9995558857917786,
+            "Text": "1234"
+        },
+        {
+            "BeginOffset": 926,
+            "EndOffset": 935,
+            "Score": 0.8137850165367126,
+            "Text": "[4][5][6]"
+        },
+        {
+            "BeginOffset": 936,
+            "EndOffset": 938,
+            "Score": 0.522939920425415,
+            "Text": "7]"
+        },
+        {
+            "BeginOffset": 939,
+            "EndOffset": 941,
+            "Score": 0.767753541469574,
+            "Text": "8]"
+        },
+        {
+            "BeginOffset": 942,
+            "EndOffset": 943,
+            "Score": 0.6852502226829529,
+            "Text": "9"
+        },
+        {
+            "BeginOffset": 954,
+            "EndOffset": 973,
+            "Score": 0.9999991655349731,
+            "Text": "multiple incursions"
+        },
+        {
+            "BeginOffset": 977,
+            "EndOffset": 994,
+            "Score": 0.999999463558197,
+            "Text": "the Mongol Empire"
+        },
+        {
+            "BeginOffset": 1002,
+            "EndOffset": 1018,
+            "Score": 0.9999998807907104,
+            "Text": "the 13th century"
+        },
+        {
+            "BeginOffset": 1036,
+            "EndOffset": 1046,
+            "Score": 0.9999998807907104,
+            "Text": "the nation"
+        },
+        {
+            "BeginOffset": 1082,
+            "EndOffset": 1096,
+            "Score": 1.0,
+            "Text": "a vassal state"
+        },
+        {
+            "BeginOffset": 1103,
+            "EndOffset": 1110,
+            "Score": 1.0,
+            "Text": "decades"
+        },
+        {
+            "BeginOffset": 1114,
+            "EndOffset": 1122,
+            "Score": 0.546406626701355,
+            "Text": "fighting"
+        },
+        {
+            "BeginOffset": 1134,
+            "EndOffset": 1153,
+            "Score": 1.0,
+            "Text": "military resistance"
+        },
+        {
+            "BeginOffset": 1160,
+            "EndOffset": 1172,
+            "Score": 0.9999999403953552,
+            "Text": "King Gongmin"
+        },
+        {
+            "BeginOffset": 1184,
+            "EndOffset": 1210,
+            "Score": 0.9999961853027344,
+            "Text": "Mongol political influence"
+        },
+        {
+            "BeginOffset": 1214,
+            "EndOffset": 1220,
+            "Score": 0.9999998807907104,
+            "Text": "Goryeo"
+        },
+        {
+            "BeginOffset": 1222,
+            "EndOffset": 1245,
+            "Score": 0.9999998807907104,
+            "Text": "severe political strife"
+        },
+        {
+            "BeginOffset": 1260,
+            "EndOffset": 1266,
+            "Score": 0.9995571970939636,
+            "Text": "Goryeo"
+        },
+        {
+            "BeginOffset": 1286,
+            "EndOffset": 1292,
+            "Score": 1.0,
+            "Text": "a coup"
+        },
+        {
+            "BeginOffset": 1300,
+            "EndOffset": 1320,
+            "Score": 0.9999988079071045,
+            "Text": "General Yi Seong-gye"
+        },
+        {
+            "BeginOffset": 1338,
+            "EndOffset": 1344,
+            "Score": 0.9999547004699707,
+            "Text": "Joseon"
+        },
+        {
+            "BeginOffset": 1348,
+            "EndOffset": 1361,
+            "Score": 0.9999998211860657,
+            "Text": "July 17, 1392"
+        }
+    ],
+    "ResponseMetadata": {
+        "HTTPHeaders": {
+            "content-length": "5096",
+            "content-type": "application/x-amz-json-1.1",
+            "date": "Sat, 22 Feb 2020 02:51:24 GMT",
+            "x-amzn-requestid": "433f36e9-3770-47bd-8898-675461707619"
+        },
+        "HTTPStatusCode": 200,
+        "RequestId": "433f36e9-3770-47bd-8898-675461707619",
+        "RetryAttempts": 0
+    }
+}

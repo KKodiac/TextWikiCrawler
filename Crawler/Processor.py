@@ -1,11 +1,23 @@
+"""This processor is for simple content analyzing. 
+    Processor() Class will output an .csv file with
+    - Word in content, 
+    - How frequently the word appears in the text
+    - Part of speech that the word belongs to
+    - Lastly, visualization of you output
+    
+    For Advanced content parsing, use ProcessorComprehend.py.
+"""
+
 import nltk
 import re
 import matplotlib.pyplot as plt
 import csv
 
+#TODO: Modify permenant file path to something scalable
+
 class Processor():
-    def __init__(self, topic_name="", bfolder_path="./DataFile/WikiPageDocument/", bfile_extension=".txt"
-                    , afolder_path="./DataFile/TokenData/", afile_extension=".csv"):
+    def __init__(self, topic_name="", bfolder_path="../DataFile/WikiPageDocument/", bfile_extension=".txt"
+                    , afolder_path="../DataFile/TokenData/", afile_extension=".csv"):
         self.btoken_file_path = bfolder_path + topic_name + bfile_extension
         self.atoken_file_path = afolder_path + topic_name + afile_extension
     
@@ -29,13 +41,8 @@ class Processor():
             stop_words_set = set(nltk.corpus.stopwords.words('english'))
             
             total_sent = [words for sent in content_matrix for words in sent if not words in stop_words_set]
-            # print(total_sent)
             fdist = nltk.probability.FreqDist(total_sent) 
             keys, freq, tag_list = self.tag_list_make(fdist)
-            # print(fdist.items())
-            # print(tag_list)
-            
-            
                 
         file.close()
         
@@ -44,10 +51,12 @@ class Processor():
             writer.writerow(["Words", "Word Frequency", "Part of Speech"])
             for cnt in range(len(fdist)-1):
                 writer.writerow([keys[cnt], freq[cnt], tag_list[cnt]]) 
-
-        """ TO read back
-        with open(self.atoken_file_path, 'r') as file:
-            reader = csv.reader()
-            fdist_dict = dict(reader)
-        """
+        
         file.close()
+        
+        return fdist
+        
+    def graph_plot(self):
+        freqdist = self.processor()
+        freqdist.plot()
+        

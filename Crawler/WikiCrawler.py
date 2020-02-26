@@ -2,35 +2,61 @@ import nltk
 from pathlib import Path
 import requests
 from bs4 import BeautifulSoup as bs4
-from os import mkdir, path
+import os 
 import json
 import re
 import sqlite3
 
-wiki_url = "https://en.wikipedia.org"
+wiki_url = "https://en.wikipedia.org/wiki/"
 test_correct_url_ = "https://en.wikipedia.org/wiki/Wiki"
 test_wrong_url_ = "https://en.wcor.org/wiki/Wiki"
 
-dir = "../Crawler/DataFile/"
-tense_dir = "../Crawler/DataFile/TenseFile/"
-toc_dir = "../Crawler/DataFile/TOC/"
-wpd_dir = "../Crawler/DataFile/WikiPageDocument/"
-wd_dir = "../Crawler/DataFile/TokenData/"
+"""
+Please be careful when trying to decide on a location for /DataFile.
+
+It will automatically be created in the parent directory of your current 
+execution directory.
+
+You can modify the designated location for your /DataFile by 
+changing the parent_dir variable.
+"""
+parent_dir = "../DataFile/"
+tense_dir = "TenseFile/"
+toc_dir = "TOC/"
+wiki_dir = "WikiPageDocument/"
+token_dir = "TokenData/"
 
 class Checker:
-    def __init__(self, DIR=dir, filename="", WORD_DIR=tense_dir, TOC_DIR=toc_dir, WPD_DIR=wpd_dir, WD_DIR=wd_dir):
+    def __init__(self, topic="", parentdir=parent_dir):
+        self.wiki_path = wiki_url
         self.url = []
-        self.DIR = DIR
-        self.TOC_DIR = TOC_DIR
-        self.filename = filename
-        self.WORD_DIR = WORD_DIR
-        self.WPD_DIR = WPD_DIR
-        self.WD_DIR = WD_DIR
-        self.FILEPATH = self.DIR + self.filename +".json"
-        self.FILEPATH2 = self.WORD_DIR + '_' + self.filename + ".json"
-        self.TOCPATH = self.TOC_DIR + '_' + self.filename + ".json"
-        self.WPDPATH = self.WPD_DIR + self.filename + ".txt"
-        self.WDPATH = self.WD_DIR + self.filename + ".csv"
+        self.parentdir = parentdir
+        self.tensedir = os.path.join(parentdir, tense_dir)
+        self.tocdir = os.path.join(parentdir, toc_dir)
+        self.wikidir = os.path.join(parentdir, wiki_dir)
+        self.tokendir = os.path.join(parentdir, token_dir)
+        self.topic = topic
+        
+    def checkFilePath(self):
+        dir_list = [self.tensedir, self.tocdir, self.tokendir, self.wikidir]
+        print("Checking Directory...\n")
+        try:
+            print(self.parentdir)
+            os.mkdir(self.parentdir)
+            print("Parent directory for data files created!\n")
+        except FileExistsError:
+            print("Topic you searched for has already been searched.\n Exiting...\n")
+            exit(1)
+        
+        for path in dir_list:
+            try:
+                os.mkdir(path)
+                file_path = os.path.join(path, self.topic)
+                
+            except FileExistsError:
+                print("Directory '%s' already exists" %path)
+                pass
+            
     def checkReqPackage(self):
         requirements = [
             'punkt', 'universal_tagset', 'averaged_perceptron_tagger', 'stopwords'
@@ -45,79 +71,15 @@ class Checker:
                 pack.download(info_or_id=mod)
                 print("Download complete!\n")
         print("All SET!\n")
-
-    def checkFilePath(self):
-        print("Checking Directory...\n")
-        try:
-            mkdir(self.DIR)
-            mkdir(self.WORD_DIR)
-            mkdir(self.TOC_DIR)
-            mkdir(self.WPD_DIR)
-            mkdir(self.WD_DIR)
-        except FileExistsError:
-            print("Directory exists.\n")
-            pass
-        
-        print("Checking for reference file...\n")
-        if(path.exists(self.FILEPATH)):
-            print("Reference file exists.\n")
-            print("You have already searched this topic. Exiting Program...\n")
-            exit(1)
-        else:
-            print("Creating a reference file.\n")
-            f = open(self.FILEPATH, 'w+')
-            f.close()
-
-        print("Checking for language file...\n")
-        if(path.exists(self.FILEPATH2)):
-            print("Language file exists.\n")
-            return
-        else:
-            print("Creating a language file.\n")
-            f = open(self.FILEPATH2, 'w+')
-            f.close()
-        
-        print("Checking for Table of Contents(TOC) file...\n")
-        if(path.exists(self.TOCPATH)):
-            print("TOC file exists.\n")
-            return
-            
-        else:
-            print("Creating a TOC file.\n")
-            f = open(self.TOCPATH, 'w+')
-            f.close()
-        
-        print("Checking for Wiki Page Document(WPD) file...\n")
-        if(path.exists(self.WPDPATH)):
-            print("WPD file exists.\n")
-            return
-            
-        else:
-            print("Creating a WPD file.\n")
-            f = open(self.WPDPATH, 'w+')
-            f.close()
-
-        print("Checking for Word Token(WD) file...\n")
-        if(path.exists(self.WDPATH)):
-            print("WPD file exists.\n")
-            return
-            
-        else:
-            print("Creating a WPD file.\n")
-            f = open(self.WDPATH, 'w+')
-            f.close()
-
-class Crawler:
-    def __init__(self, topic=""):
-        self.fileURL = dir + topic + ".json"
-        self.tocfileURL = toc_dir + topic + ".json"
-        self.wpdfileURL = wpd_dir + topic + ".txt"
-        self.topic = topic
-        self.wiki_path = "https://en.wikipedia.org/wiki/"
+    
+    
+class Crawler(Checker):
+    def __init__(self, filename):
+        Checker.__init__(self, filename)
         self.WIKILINK = self.wiki_path + self.topic
-        self.parags = []
-        self.topicList = list()
-
+        self.topicList = []
+        self.listofcontents = os.path.join(self.tensedir, self.topic + ".json")
+        
     def requestForHTML(self):
         try:
             url = requests.get(self.WIKILINK)
@@ -135,12 +97,12 @@ class Crawler:
     def requestPageData(self):
         soupify = self.requestForHTML()
         parags = soupify.find(id="mw-content-text").find(class_="mw-parser-output").find_all("p", recursive=False)
-        
+        print(self.listofcontents)
         ### Crawls for url links on Topic wiki page
         for link in parags:
             if(link is not None):
                 self.topicList.append(link.find_all('a'))
-        tag_file = open(self.fileURL, 'a+', encoding='utf-8')
+        tag_file = open(self.listofcontents, 'a+', encoding='utf-8')
         tag_file.write('[')
         id_count = 0
         for i in self.topicList:
@@ -156,7 +118,8 @@ class Crawler:
                     tag_file.write(',')
         tag_file.write('{}]')
         tag_file.close()
-    
+
+#TODO: Table of contents parsing for creating Big BulletPoints!
     def requestTOC(self):
         soupify = self.requestForHTML()
         table_of_contents = soupify.find(id='mw-content-text').find(class_='mw-parser-output').find(id='toc')
@@ -183,49 +146,30 @@ class Crawler:
             index = int(i[0]) - 1
             temp[index].append(i)
         
-        # cluster = [x for x in temp if x != []]
-        
-        
-        # ### Creating a json formatted Bullet Pointed TOC
-        # json_struct = {
-        #     "Topic":{
-        #         "name" : '',
-        #         "BP" : {
-        #             "main_BP" : '',
-        #             # Numbers sorted 
-        #             "sub-BP" : {}
-                    
-        #         }
-        #     }
-        # }
-    
 # gets document content from desired topic
 
     def requestWikiPageDoc(self):
         soupify = self.requestForHTML()
         get_document_content = soupify.find(id="mw-content-text").find(class_="mw-parser-output")
         tags = get_document_content.find_all(['p','h2','h3'])
-        print(tags)
-        f = open(self.wpdfileURL, 'w+')
+        
+        fname = os.path.join(self.wikidir, self.topic + ".txt")
+        print(fname)
+        f = open(fname, 'w+')
 
         for tag in tags:
             text = tag.text
             try:
                 f.write(text)
+                f.write('\n')
             except:
                 pass
-            f.write("\n")
-
- 
+            
         f.close()
             
 
-
-
-class Parser(Crawler, Checker):
+class Parser(Crawler):
     def __init__(self, main_topic):
-        fname = main_topic
-        Checker.__init__(self, filename=fname)
         Crawler.__init__(self, main_topic)
     
     def checkRequirements(self):
@@ -237,7 +181,7 @@ class Parser(Crawler, Checker):
         # self.requestTP()
 
     def loadJson(self):
-        with open(self.fileURL, 'r', encoding='utf-8') as jsonf:
+        with open(self.listofcontents, 'r', encoding='utf-8') as jsonf:
             datas = jsonf.read()
             datal = json.loads(datas) # datal is a list
         return datal
@@ -252,21 +196,3 @@ class Parser(Crawler, Checker):
                 print("TITLE: {} ==> WIKI LINK: {} \n\n".format(data['title'], wiki_url + data['link']))
             except KeyError:
                 pass
-
-    def addToSQL(self):
-        SQLPATH = "../Web/database.sqlite3"
-        db = sqlite3.connect(SQLPATH)
-        data = self.loadJson()
-        columns = ['id', 'title', 'link']
-        query = "INSERT OR IGNORE INTO notes_data(id,title,link) VALUES (?,?,?)"
-        for d in data:
-            try:
-                keys = tuple(str(d[c]) for c in columns)
-            except KeyError:
-                pass
-            c = db.cursor()
-            c.execute(query,keys)
-            db.commit()
-        c.close()
-
-
