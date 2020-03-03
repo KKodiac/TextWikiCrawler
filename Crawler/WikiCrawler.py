@@ -59,7 +59,10 @@ class Checker:
             
     def checkReqPackage(self):
         requirements = [
-            'punkt', 'universal_tagset', 'averaged_perceptron_tagger', 'stopwords'
+            'punkt', 
+            'universal_tagset', 
+            'averaged_perceptron_tagger', 
+            'stopwords'
         ]
         pack = nltk.downloader.Downloader()
         for mod in requirements:
@@ -83,12 +86,12 @@ class Crawler(Checker):
     def requestForHTML(self):
         try:
             url = requests.get(self.WIKILINK)
-        except ConnectionError:
+            
+        except (ConnectionError, TimeoutError):
             print("You have a network problem. Recheck your connection.\n")
             exit()
-        except TimeoutError:
-            print("Your connection timed out.\n")
-            exit()
+            
+            
         html = url.text
         soupify = bs4(html, 'html.parser')
         
@@ -97,7 +100,7 @@ class Crawler(Checker):
     def requestPageData(self):
         soupify = self.requestForHTML()
         parags = soupify.find(id="mw-content-text").find(class_="mw-parser-output").find_all("p", recursive=False)
-        print(self.listofcontents)
+        
         ### Crawls for url links on Topic wiki page
         for link in parags:
             if(link is not None):

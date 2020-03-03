@@ -12,14 +12,15 @@ import nltk
 import re
 import matplotlib.pyplot as plt
 import csv
+from os import path
 
 #TODO: Modify permenant file path to something scalable
 
 class Processor():
     def __init__(self, topic_name="", bfolder_path="../DataFile/WikiPageDocument/", bfile_extension=".txt"
                     , afolder_path="../DataFile/TokenData/", afile_extension=".csv"):
-        self.btoken_file_path = bfolder_path + topic_name + bfile_extension
-        self.atoken_file_path = afolder_path + topic_name + afile_extension
+        self.btoken_file_path = path.join(bfolder_path,topic_name,bfile_extension)
+        self.atoken_file_path = path.join(afolder_path,topic_name,afile_extension)
     
     def tag_list_make(self, list):
         tag_list = nltk.pos_tag(list.keys())

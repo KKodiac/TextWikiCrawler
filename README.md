@@ -1,4 +1,4 @@
-# Created while doing mendatory military service in ROKArmy GOP Unit
+# Created while doing mendatory military service in ROKArmy GOP Unit</br > 군대에서 현타 올 때 만들었어용
 # This branch has removed Web Integration
 # Wikipedia Crawler
 
@@ -10,20 +10,27 @@ I'm trying to work on a language processing program by applying
 Machine Learning to it from scratch. 
 
 ## NLTK Addons
-We use nltk database in order to classify each word with its part of speech.
-You would need to manually download 
-`punkt`
-`universal_tagset`
-`averaged_perceptron_tagger`
-with 
-`python3 -m nltk.download([addons-here])`
+We use nltk database in order to classify each word with its part of speech.</br > 
+Program automatically downloads required NLTK packages </br > 
+```
+punkt
+universal_tagset
+averaged_perceptroon_tagger
+stopwords
+```
 
-
-## Additional Modules Needed
-We need 
+## Additional Python Libraries Needed
+We need </br > 
+```
 `requests` and
 `BeautifulSoup4` for crawling
 `pandas` for language processing 
+```
+You can </br > 
+```
+python3 -m pip install -r requirements.txt
+```
+to install required python libraries
 
 ## Data format
 
@@ -32,10 +39,6 @@ distintions.
 *Word: The actual word from wikipedia paragraph
 *Tense: _NOUN_ for nouns, _ADJ_ for adjectives, _VERB_ for verbs, and _NUM_ for numbers
 *Path: url path to the wikipedia page where the word was found
-
-## Notes
-From django framework, will be working on Notes creater that automatically create notes involving a topic that
-a user desires.
 
 
 ## Contact 
