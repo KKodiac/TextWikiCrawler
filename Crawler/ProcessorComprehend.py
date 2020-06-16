@@ -6,10 +6,11 @@ from sys import argv
 file_dir = '../DataFile/WikiPageDocument'
 
 class Processor:
-    def __init__(self, filename=""):
+    def __init__(self, filename=None):
         self.fname = filename
         
     def comprehend(self):
+        assert self.fname != None, 'Invalid Filename'
         comp= boto3.client(service_name='comprehend', region_name='us-east-1') 
         fpath = path.join(file_dir, self.fname)
         print(fpath)
@@ -49,5 +50,3 @@ if __name__ == '__main__':
     print(file_name)
     processor = Processor(file_name)
     processor.show()
-    
-#TODO: 
