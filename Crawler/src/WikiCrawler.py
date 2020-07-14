@@ -61,7 +61,8 @@ class Checker:
         try:
             requests.get(request)
         except TimeoutError:
-            print("Timeout Error. You fucking better spend more of that Lincoln dollars getting a new home network!@")
+            print("Timeout Error! Retry again later.")
+            exit()
             
 
     def checkReqPackage(self):

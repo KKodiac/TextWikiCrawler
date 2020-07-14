@@ -8,7 +8,7 @@ import sys
 if __name__ == '__main__':
     param_topic=sys.argv[1]
     parser = Parser(param_topic)
-    #Required to run only when runnning the program the first time
+    # #Required to run only when runnning the program the first time
     parser.checkRequirements()
     parser.returnData()
     

@@ -6,7 +6,7 @@
     Implemented by csurfer(https://github.com/csurfer/rake-nltk/blob/master/rake_nltk/rake.py)
 """
 
-from Processor import *
+from .Processor import *
 from rake_nltk import Rake
 
 class Comprehend:
@@ -15,6 +15,7 @@ class Comprehend:
         self.raker = Rake(min_length=MIN_LENGTH, max_length=MAX_LENGTH)
 
     def extract_keywords(self):
+        self.proc.processor()
         file = open(self.proc.btoken_file_path, 'r')
         text = file.read()
         self.raker.extract_keywords_from_text(text)
@@ -24,4 +25,3 @@ class Comprehend:
         text_with_scores = self.raker.get_ranked_phrases_with_scores()
 
         return text_with_scores
-

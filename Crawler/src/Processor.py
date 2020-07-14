@@ -13,16 +13,16 @@ import re
 import matplotlib.pyplot as plt
 import csv
 from os import path
-
+from ast import literal_eval
 #TODO: Modify permenant file path to something scalable
 
 class Processor():
     def __init__(
         self, 
         topic_name="", 
-        bfolder_path="DataFile/WikiPageDocument/", 
+        bfolder_path="../DataFile/WikiPageDocument/", 
         bfile_extension=".txt", 
-        afolder_path="DataFile/TokenData/", 
+        afolder_path="../DataFile/TokenData/", 
         afile_extension=".csv"):
 
         self.btoken_file_path = path.join(
@@ -43,13 +43,17 @@ class Processor():
         return keys, freq, tag_list
     
     def processor(self):
+        _stopwords = open('_stopwords/_stopwords')
+        _stopwords_text = _stopwords.read()
         with open(self.btoken_file_path, 'r') as file:
             content = file.readlines()
             content = [re.sub('[^A-Za-z0-9]+', ' ', ct) for ct in content]
             tokenizer = nltk.tokenize.word_tokenize
             content_matrix = [tokenizer(line) for line in content]
-            stop_words_set = set(nltk.corpus.stopwords.words('english'))
-            
+            stop_words_set = [
+                set(nltk.corpus.stopwords.words('english')), 
+                literal_eval(_stopwords_text)
+                ]
             total_sent = [words.lower() for sent in content_matrix for words in sent if not words in stop_words_set]
             fdist = nltk.probability.FreqDist(total_sent) 
             keys, freq, tag_list = self.tag_list_make(fdist)
