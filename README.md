@@ -39,9 +39,9 @@ to install required python libraries
 ## RAKE(Rapid Automatic Keyword Extraction)
 For keyword extraction, RAKE algorithm has been used.
 For more information regarding RAKE algorithm please go to
-[csurfer's](https://github.com/csurfer/rake_nltk) package.
+[csurfer's](https://github.com/csurfer/rake-nltk) package.
 키워드 정리를 위해서 RAKE 알고리즘을 사용했습니다. 
-자세한 정보가 필요하면 [csurfer's](https://github.com/csurfer/rake_nltk) 링크를 참고해주세요.
+자세한 정보가 필요하면 [csurfer's](https://github.com/csurfer/rake-nltk) 링크를 참고해주세요.
 
 ## Contact 
 
