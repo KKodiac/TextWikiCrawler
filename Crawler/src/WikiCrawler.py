@@ -22,7 +22,7 @@ changing the parent_dir variable.
 """
 parent_dir = "../DataFile/"
 tense_dir = "TenseFile/"
-toc_dir = "TOC/"
+toc_dir = "RAKE/"
 wiki_dir = "WikiPageDocument/"
 token_dir = "TokenData/"
 
@@ -45,8 +45,8 @@ class Checker:
             os.mkdir(self.parentdir)
             print("Parent directory for data files created!\n")
         except FileExistsError:
-            print("Topic you searched for has already been searched.\n Exiting...\n")
-            exit(1)
+            print("Parent Folder exists!")
+            pass
         
         for path in dir_list:
             try:
@@ -56,10 +56,17 @@ class Checker:
             except FileExistsError:
                 print("Directory '%s' already exists" %path)
                 pass
+    
+    def testTimeOut(self, request, topic):
+        try:
+            requests.get(request)
+        except TimeoutError:
+            print("Timeout Error. You fucking better spend more of that Lincoln dollars getting a new home network!@")
             
+
     def checkReqPackage(self):
         requirements = [
-            'punkt', 
+            'punkt',
             'universal_tagset', 
             'averaged_perceptron_tagger', 
             'stopwords'
@@ -141,7 +148,6 @@ class Crawler(Checker):
 
         for i in toc_list_ul:
             if(i not in toc_list):
-                
                 toc_list.append(i)
                 
         temp = [ [] for _ in range(len(toc_list))] 

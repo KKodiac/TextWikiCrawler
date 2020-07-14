@@ -1,6 +1,45 @@
 <html>
-    <head></head>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            table {
+                border-collapse: collapse;
+                border: 2px black solid;
+                font: 12px sans-serif;
+            }
+
+            td {
+                border: 1px black solid;
+                padding: 5px;
+            }
+        </style>        
+
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+
+        <script type="text/javascript"charset="utf-8">
+            FOlDER_DIR = "../../DataFile/TokenData/"$
+            TOPIC = document.getComponentById("topic")
+            FILE_LOC = FOLDR_DIR + TOPIC + ".txt"
+            d3.text(FILE_LOC, function(data) {
+                var parsedCSV = d3.csv.parseRows(data);
+
+                var container = d3.select("body")
+                    .append("table")
+
+                    .selectAll("tr")
+                        .data(parsedCSV).enter()
+                        .append("tr")
+
+                    .selectAll("td")
+                        .data(function(d) { return d; }).enter()
+                        .append("td")
+                        .text(function(d) { return d; });
+        </script>
+
+    </head>
     <body>
-        <h1>Test Page</h1>
+        <h1>MOST RELEVANT KEYWORDS FROM TOPIC</h1>
+
+        <input type=text id="topic" name="topic">
     </body>
 </html>
