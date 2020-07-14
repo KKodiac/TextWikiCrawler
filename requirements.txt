@@ -1,6 +1,6 @@
 beautifulsoup4
 bs4
-boto3
+rake_nltk
 certifi
 chardet
 colorama
