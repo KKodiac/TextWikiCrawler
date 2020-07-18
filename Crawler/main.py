@@ -14,10 +14,8 @@ if __name__ == '__main__':
     
     
     parser = Processor(param_topic)
-    parser.processor()
-    # parser.addToSQL()
-    
+    parser.processor()    
 
     proc = Comprehend(param_topic)
     proc.extract_keywords()
-    print(proc.extract_keywords_with_scores())
+    proc.load_to_data()

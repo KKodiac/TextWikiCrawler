@@ -107,13 +107,19 @@ class Crawler(Checker):
         
     def requestPageData(self):
         soupify = self.requestForHTML()
-        parags = soupify.find(id="mw-content-text").find(class_="mw-parser-output").find_all("p", recursive=False)
+        parags = soupify.find(
+            id="mw-content-text"
+            ).find(
+            class_="mw-parser-output"
+            ).find_all(
+                "p", recursive=False
+                )
         
         ### Crawls for url links on Topic wiki page
         for link in parags:
             if(link is not None):
                 self.topicList.append(link.find_all('a'))
-        tag_file = open(self.listofcontents, 'a+', encoding='utf-8')
+        tag_file = open(self.listofcontents, 'w+', encoding='utf-8')
         tag_file.write('[')
         id_count = 0
         for i in self.topicList:
@@ -133,7 +139,10 @@ class Crawler(Checker):
 #TODO: Table of contents parsing for creating Big BulletPoints!
     def requestTOC(self):
         soupify = self.requestForHTML()
-        table_of_contents = soupify.find(id='mw-content-text').find(class_='mw-parser-output').find(id='toc')
+        table_of_contents = soupify.find(
+            id='mw-content-text').find(
+                class_='mw-parser-output').find(
+                    id='toc')
         
         ### Crawls for TOC on a wikipediac page
         toc_list_ul = []
