@@ -29,8 +29,16 @@ class Comprehend:
         return text_with_scores
 
     def load_to_data(self):
+        pair = list()
         text_score = self.extract_keywords_with_scores()
         RAKE_file = open("../DataFile/RAKE/"+self.topic+".json", 'w+')
-        json.dump(text_score, RAKE_file, indent=4)
+        for c in text_score:
+            temp = [("score", c[0]),("text", c[1])]
+            # print(dict(temp))
+            pair.append(dict(temp))
+        print()
+        json.dump(pair, RAKE_file, indent=4)
+        json.load(RAKE_file)
+        # json.dump(text_score, RAKE_file, indent=2)
     
 

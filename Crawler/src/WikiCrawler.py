@@ -7,7 +7,7 @@ import json
 import re
 import sqlite3
 
-wiki_url = "https://en.wikipedia.org/wiki/"
+WIKI_DIR = "https://en.wikipedia.org/wiki/"
 test_correct_url_ = "https://en.wikipedia.org/wiki/Wiki"
 test_wrong_url_ = "https://en.wcor.org/wiki/Wiki"
 
@@ -18,23 +18,23 @@ It will automatically be created in the parent directory of your current
 execution directory.
 
 You can modify the designated location for your /DataFile by 
-changing the parent_dir variable.
+changing the PARENT_DIR variable.
 """
-parent_dir = "../DataFile/"
-tense_dir = "TenseFile/"
-toc_dir = "RAKE/"
-wiki_dir = "WikiPageDocument/"
-token_dir = "TokenData/"
+PARENT_DIR = "../DataFile/"
+TENSE_DIR = "TenseFile/"
+RAKE_DIR = "RAKE/"
+PAGE_DIR = "WikiPageDocument/"
+TOKEN_DIR = "TokenData/"
 
 class Checker:
-    def __init__(self, topic="", parentdir=parent_dir):
-        self.wiki_path = wiki_url
+    def __init__(self, topic="", parentdir=PARENT_DIR):
+        self.wiki_path = WIKI_DIR
         self.url = []
         self.parentdir = parentdir
-        self.tensedir = os.path.join(parentdir, tense_dir)
-        self.tocdir = os.path.join(parentdir, toc_dir)
-        self.wikidir = os.path.join(parentdir, wiki_dir)
-        self.tokendir = os.path.join(parentdir, token_dir)
+        self.tensedir = os.path.join(parentdir, TENSE_DIR)
+        self.tocdir = os.path.join(parentdir, RAKE_DIR)
+        self.wikidir = os.path.join(parentdir, PAGE_DIR)
+        self.tokendir = os.path.join(parentdir, TOKEN_DIR)
         self.topic = topic
         
     def checkFilePath(self):
@@ -212,6 +212,6 @@ class Parser(Crawler):
         print("----------------------------------\n")
         for data in self.loadJson():
             try:
-                print("TITLE: {} ==> WIKI LINK: {} \n\n".format(data['title'], wiki_url + data['link']))
+                print("TITLE: {} ==> WIKI LINK: {} \n\n".format(data['title'], WIKI_DIR + data['link'][6:]))
             except KeyError:
                 pass
