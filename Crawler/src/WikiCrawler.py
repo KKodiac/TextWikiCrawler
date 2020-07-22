@@ -42,7 +42,8 @@ class Checker:
         print("Checking Directory...\n")
         try:
             print(self.parentdir)
-            os.mkdir(self.parentdir)
+            os.umask(0)
+            os.makedirs(self.parentdir, mode=0o777)
             print("Parent directory for data files created!\n")
         except FileExistsError:
             print("Parent Folder exists!")
@@ -51,7 +52,7 @@ class Checker:
         for path in dir_list:
             try:
                 os.mkdir(path)
-                file_path = os.path.join(path, self.topic)
+                os.path.join(path, self.topic)
                 
             except FileExistsError:
                 print("Directory '%s' already exists" %path)
@@ -104,7 +105,24 @@ class Crawler(Checker):
         soupify = bs4(html, 'html.parser')
         
         return soupify
+    
+    def vagueLinks(self):
+        soupify = self.requestForHTML()
         
+        try:
+            # for "...For other uses..."
+            vague = soupify.find(role="note").find_all("a")
+        except AttributeError as aerror:
+            # print("Error Occured: >> {}".format(aerror))
+            #  for "...may refer to:..."
+            vague = soupify.find(class_="mw-parser-output").find("ul", recursive=False).find_all("li")
+        print("The topic has other similar Wiki Links\nTry the following topics for more info. >>\n")
+        for i in vague:
+            print("{}\n".format(i.text))
+        
+        
+
+
     def requestPageData(self):
         soupify = self.requestForHTML()
         parags = soupify.find(
@@ -136,34 +154,34 @@ class Crawler(Checker):
         tag_file.write('{}]')
         tag_file.close()
 
-#TODO: Table of contents parsing for creating Big BulletPoints!
-    def requestTOC(self):
-        soupify = self.requestForHTML()
-        table_of_contents = soupify.find(
-            id='mw-content-text').find(
-                class_='mw-parser-output').find(
-                    id='toc')
+# #TODO: Table of contents parsing for creating Big BulletPoints!
+#     def requestTOC(self):
+#         soupify = self.requestForHTML()
+#         table_of_contents = soupify.find(
+#             id='mw-content-text').find(
+#                 class_='mw-parser-output').find(
+#                     id='toc')
         
-        ### Crawls for TOC on a wikipediac page
-        toc_list_ul = []
-        toc_list = []
-        try:
-            for toc in table_of_contents.find_all('li'):
-                # print(toc.ul)
-                for x in toc.get_text().split('\n'):
-                    if(x != ""):
-                        toc_list_ul.append(x)
-        except AttributeError:
-            pass
+#         ### Crawls for TOC on a wikipediac page
+#         toc_list_ul = []
+#         toc_list = []
+#         try:
+#             for toc in table_of_contents.find_all('li'):
+#                 # print(toc.ul)
+#                 for x in toc.get_text().split('\n'):
+#                     if(x != ""):
+#                         toc_list_ul.append(x)
+#         except AttributeError:
+#             pass
 
-        for i in toc_list_ul:
-            if(i not in toc_list):
-                toc_list.append(i)
+#         for i in toc_list_ul:
+#             if(i not in toc_list):
+#                 toc_list.append(i)
                 
-        temp = [ [] for _ in range(len(toc_list))] 
-        for i in toc_list:
-            index = int(i[0]) - 1
-            temp[index].append(i)
+#         temp = [ [] for _ in range(len(toc_list))] 
+#         for i in toc_list:
+#             index = int(i[0]) - 1
+#             temp[index].append(i)
         
 # gets document content from desired topic
 
@@ -195,8 +213,9 @@ class Parser(Crawler):
         self.checkReqPackage()
         self.checkFilePath()
         self.requestPageData()
-        self.requestTOC()
+        # self.requestTOC()
         self.requestWikiPageDoc()
+        self.vagueLinks()
         # self.requestTP()
 
     def loadJson(self):
