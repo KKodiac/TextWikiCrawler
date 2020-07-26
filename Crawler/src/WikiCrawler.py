@@ -21,7 +21,7 @@ You can modify the designated location for your /DataFile by
 changing the PARENT_DIR variable.
 """
 PARENT_DIR = "../DataFile/"
-TENSE_DIR = "TenseFile/"
+TENSE_DIR = "LinkFile/"
 RAKE_DIR = "RAKE/"
 PAGE_DIR = "WikiPageDocument/"
 TOKEN_DIR = "TokenData/"

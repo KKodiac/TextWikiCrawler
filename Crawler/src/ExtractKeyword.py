@@ -9,6 +9,8 @@
 from .Processor import Processor
 from rake_nltk import Rake
 import json
+import mysql.connector as connector
+
 
 class Comprehend:
     def __init__(self, topic, MIN_LENGTH=2, MAX_LENGTH=10000):
@@ -38,7 +40,37 @@ class Comprehend:
             pair.append(dict(temp))
         print()
         json.dump(pair, RAKE_file, indent=4)
-        json.load(RAKE_file)
+        # 
         # json.dump(text_score, RAKE_file, indent=2)
-    
+"""
+import mysql.connector
 
+config = {
+  'user': 'scott',
+  'password': 'password',
+  'host': '127.0.0.1',
+  'database': 'employees',
+  'raise_on_warnings': True
+}
+
+cnx = mysql.connector.connect(**config)
+
+cnx.close()
+"""
+
+class ConnectSql:
+    def __init__(self, config={}):
+        try:
+            self.cnx = connector.connect(**config)
+        except connector.Error as err:
+            if err.errno == connector.errorcode.ER_ACCESS_DENIED_ERROR:
+                print("Something is wrong with your user name or password")
+            elif err.errno == connector.errorcode.ER_BAD_DB_ERROR: 
+                print("Database does not exist")
+            else:
+                print(err)
+        self.close = self.cnx.close()
+  
+            
+
+        
