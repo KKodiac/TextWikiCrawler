@@ -1,0 +1,2913 @@
+[
+    {
+        "id": 1,
+        "title": "Grammar",
+        "link": "/wiki/Grammar"
+    },
+    {
+        "id": 2,
+        "title": "Communication",
+        "link": "/wiki/Communication"
+    },
+    {
+        "id": 3,
+        "title": "Linguistics",
+        "link": "/wiki/Linguistics"
+    },
+    {
+        "id": 4,
+        "title": "Philosophy of language",
+        "link": "/wiki/Philosophy_of_language"
+    },
+    {
+        "id": 5,
+        "title": "Gorgias",
+        "link": "/wiki/Gorgias"
+    },
+    {
+        "id": 6,
+        "title": "Plato",
+        "link": "/wiki/Plato"
+    },
+    {
+        "id": 7,
+        "title": "Ancient Greece",
+        "link": "/wiki/Ancient_Greece"
+    },
+    {
+        "id": 8,
+        "title": "Rousseau",
+        "link": "/wiki/Rousseau"
+    },
+    {
+        "id": 9,
+        "title": "Immanuel Kant",
+        "link": "/wiki/Immanuel_Kant"
+    },
+    {
+        "id": 10,
+        "title": "Ludwig Wittgenstein",
+        "link": "/wiki/Ludwig_Wittgenstein"
+    },
+    {
+        "id": 11,
+        "title": "Ferdinand de Saussure",
+        "link": "/wiki/Ferdinand_de_Saussure"
+    },
+    {
+        "id": 12,
+        "title": "Noam Chomsky",
+        "link": "/wiki/Noam_Chomsky"
+    },
+    {
+        "id": 13,
+        "title": "Dialect",
+        "link": "/wiki/Dialect"
+    },
+    {
+        "id": 14,
+        "title": "Natural language",
+        "link": "/wiki/Natural_language"
+    },
+    {
+        "id": 15,
+        "title": "Speech",
+        "link": "/wiki/Speech"
+    },
+    {
+        "id": 16,
+        "title": "Sign language",
+        "link": "/wiki/Sign_language"
+    },
+    {
+        "id": 17,
+        "title": "Encoding (semiotics)",
+        "link": "/wiki/Encoding_(semiotics)"
+    },
+    {
+        "id": 18,
+        "title": "Stimulus (physiology)",
+        "link": "/wiki/Stimulus_(physiology)"
+    },
+    {
+        "id": 19,
+        "title": "Braille",
+        "link": "/wiki/Braille"
+    },
+    {
+        "id": 20,
+        "title": "Modality (semiotics)",
+        "link": "/wiki/Modality_(semiotics)"
+    },
+    {
+        "id": 21,
+        "title": "Philosophy of language",
+        "link": "/wiki/Philosophy_of_language"
+    },
+    {
+        "id": 22,
+        "title": "Semiosis",
+        "link": "/wiki/Semiosis"
+    },
+    {
+        "id": 23,
+        "title": "Sign (linguistics)",
+        "link": "/wiki/Sign_(linguistics)"
+    },
+    {
+        "id": 24,
+        "title": "Meaning (linguistics)",
+        "link": "/wiki/Meaning_(linguistics)"
+    },
+    {
+        "id": 25,
+        "title": "Oral language",
+        "link": "/wiki/Oral_language"
+    },
+    {
+        "id": 26,
+        "title": "Sign language",
+        "link": "/wiki/Sign_language"
+    },
+    {
+        "id": 27,
+        "title": "Phonology",
+        "link": "/wiki/Phonology"
+    },
+    {
+        "id": 28,
+        "title": "Morpheme",
+        "link": "/wiki/Morpheme"
+    },
+    {
+        "id": 29,
+        "title": "Syntax",
+        "link": "/wiki/Syntax"
+    },
+    {
+        "id": 30,
+        "title": "Productivity (linguistics)",
+        "link": "/wiki/Productivity_(linguistics)"
+    },
+    {
+        "id": 31,
+        "title": "Displacement (linguistics)",
+        "link": "/wiki/Displacement_(linguistics)"
+    },
+    {
+        "id": 32,
+        "title": "Animal communication",
+        "link": "/wiki/Animal_communication"
+    },
+    {
+        "id": 33,
+        "title": "Hominin",
+        "link": "/wiki/Hominin"
+    },
+    {
+        "id": 34,
+        "title": "Theory of mind",
+        "link": "/wiki/Theory_of_mind"
+    },
+    {
+        "id": 35,
+        "title": "Intentionality",
+        "link": "/wiki/Intentionality"
+    },
+    {
+        "id": 36,
+        "title": "Human brain",
+        "link": "/wiki/Human_brain"
+    },
+    {
+        "id": 37,
+        "title": "Broca's area",
+        "link": "/wiki/Broca%27s_area"
+    },
+    {
+        "id": 38,
+        "title": "Wernicke's area",
+        "link": "/wiki/Wernicke%27s_area"
+    },
+    {
+        "id": 39,
+        "title": "Language acquisition",
+        "link": "/wiki/Language_acquisition"
+    },
+    {
+        "id": 40,
+        "title": "Culture",
+        "link": "/wiki/Culture"
+    },
+    {
+        "id": 41,
+        "title": "Identity (social science)",
+        "link": "/wiki/Identity_(social_science)"
+    },
+    {
+        "id": 42,
+        "title": "Social stratification",
+        "link": "/wiki/Social_stratification"
+    },
+    {
+        "id": 43,
+        "title": "Social grooming",
+        "link": "/wiki/Social_grooming"
+    },
+    {
+        "id": 44,
+        "title": "Entertainment",
+        "link": "/wiki/Entertainment"
+    },
+    {
+        "id": 45,
+        "title": "Language change",
+        "link": "/wiki/Language_change"
+    },
+    {
+        "id": 46,
+        "title": "Historical linguistics",
+        "link": "/wiki/Historical_linguistics"
+    },
+    {
+        "id": 47,
+        "title": "Comparative method (linguistics)",
+        "link": "/wiki/Comparative_method_(linguistics)"
+    },
+    {
+        "id": 48,
+        "title": "Language family",
+        "link": "/wiki/Language_family"
+    },
+    {
+        "id": 49,
+        "title": "Indo-European languages",
+        "link": "/wiki/Indo-European_languages"
+    },
+    {
+        "id": 50,
+        "title": "English language",
+        "link": "/wiki/English_language"
+    },
+    {
+        "id": 51,
+        "title": "Russian language",
+        "link": "/wiki/Russian_language"
+    },
+    {
+        "id": 52,
+        "title": "Hindi",
+        "link": "/wiki/Hindi"
+    },
+    {
+        "id": 53,
+        "title": "Sino-Tibetan languages",
+        "link": "/wiki/Sino-Tibetan_languages"
+    },
+    {
+        "id": 54,
+        "title": "Mandarin Chinese",
+        "link": "/wiki/Mandarin_Chinese"
+    },
+    {
+        "id": 55,
+        "title": "Chinese language",
+        "link": "/wiki/Chinese_language"
+    },
+    {
+        "id": 56,
+        "title": "Bodo language",
+        "link": "/wiki/Bodo_language"
+    },
+    {
+        "id": 57,
+        "title": "Standard Tibetan",
+        "link": "/wiki/Standard_Tibetan"
+    },
+    {
+        "id": 58,
+        "title": "Afro-Asiatic languages",
+        "link": "/wiki/Afro-Asiatic_languages"
+    },
+    {
+        "id": 59,
+        "title": "Arabic language",
+        "link": "/wiki/Arabic_language"
+    },
+    {
+        "id": 60,
+        "title": "Somali language",
+        "link": "/wiki/Somali_language"
+    },
+    {
+        "id": 61,
+        "title": "Hebrew language",
+        "link": "/wiki/Hebrew_language"
+    },
+    {
+        "id": 62,
+        "title": "Bantu languages",
+        "link": "/wiki/Bantu_languages"
+    },
+    {
+        "id": 63,
+        "title": "Swahili language",
+        "link": "/wiki/Swahili_language"
+    },
+    {
+        "id": 64,
+        "title": "Zulu language",
+        "link": "/wiki/Zulu_language"
+    },
+    {
+        "id": 65,
+        "title": "Africa",
+        "link": "/wiki/Africa"
+    },
+    {
+        "id": 66,
+        "title": "Malayo-Polynesian languages",
+        "link": "/wiki/Malayo-Polynesian_languages"
+    },
+    {
+        "id": 67,
+        "title": "Indonesian language",
+        "link": "/wiki/Indonesian_language"
+    },
+    {
+        "id": 68,
+        "title": "Malay language",
+        "link": "/wiki/Malay_language"
+    },
+    {
+        "id": 69,
+        "title": "Tagalog language",
+        "link": "/wiki/Tagalog_language"
+    },
+    {
+        "id": 70,
+        "title": "Pacific",
+        "link": "/wiki/Pacific"
+    },
+    {
+        "id": 71,
+        "title": "Dravidian language",
+        "link": "/wiki/Dravidian_language"
+    },
+    {
+        "id": 72,
+        "title": "Tamil language",
+        "link": "/wiki/Tamil_language"
+    },
+    {
+        "id": 73,
+        "title": "Telugu language",
+        "link": "/wiki/Telugu_language"
+    },
+    {
+        "id": 74,
+        "title": "Kannada language",
+        "link": "/wiki/Kannada_language"
+    },
+    {
+        "id": 75,
+        "title": "Language death",
+        "link": "/wiki/Language_death"
+    },
+    {
+        "id": 76,
+        "title": "Proto-Indo-European language",
+        "link": "/wiki/Proto-Indo-European_language"
+    },
+    {
+        "id": 77,
+        "title": "Latin",
+        "link": "/wiki/Latin"
+    },
+    {
+        "id": 78,
+        "title": "Old French",
+        "link": "/wiki/Old_French"
+    },
+    {
+        "id": 79,
+        "title": "Code",
+        "link": "/wiki/Code"
+    },
+    {
+        "id": 80,
+        "title": "Cipher",
+        "link": "/wiki/Cipher"
+    },
+    {
+        "id": 81,
+        "title": "Constructed language",
+        "link": "/wiki/Constructed_language"
+    },
+    {
+        "id": 82,
+        "title": "Programming language",
+        "link": "/wiki/Programming_language"
+    },
+    {
+        "id": 83,
+        "title": "Formal language",
+        "link": "/wiki/Formal_language"
+    },
+    {
+        "id": 84,
+        "title": "System",
+        "link": "/wiki/System"
+    },
+    {
+        "id": 85,
+        "title": "Sign (linguistics)",
+        "link": "/wiki/Sign_(linguistics)"
+    },
+    {
+        "id": 86,
+        "title": "Encoding",
+        "link": "/wiki/Encoding"
+    },
+    {
+        "id": 87,
+        "title": "Information",
+        "link": "/wiki/Information"
+    },
+    {
+        "id": 88,
+        "title": "Natural language",
+        "link": "/wiki/Natural_language"
+    },
+    {
+        "id": 89,
+        "title": "Linguistics",
+        "link": "/wiki/Linguistics"
+    },
+    {
+        "id": 90,
+        "title": "French language",
+        "link": "/wiki/French_language"
+    },
+    {
+        "id": 91,
+        "title": "Ferdinand de Saussure",
+        "link": "/wiki/Ferdinand_de_Saussure"
+    },
+    {
+        "id": 92,
+        "title": "Langue and parole",
+        "link": "/wiki/Langue_and_parole"
+    },
+    {
+        "id": 93,
+        "title": "Theory of language",
+        "link": "/wiki/Theory_of_language"
+    },
+    {
+        "id": 94,
+        "title": "Gorgias",
+        "link": "/wiki/Gorgias"
+    },
+    {
+        "id": 95,
+        "title": "Plato",
+        "link": "/wiki/Plato"
+    },
+    {
+        "id": 96,
+        "title": "Age of Enlightenment",
+        "link": "/wiki/Age_of_Enlightenment"
+    },
+    {
+        "id": 97,
+        "title": "Rousseau",
+        "link": "/wiki/Rousseau"
+    },
+    {
+        "id": 98,
+        "title": "Johann Gottfried Herder",
+        "link": "/wiki/Johann_Gottfried_Herder"
+    },
+    {
+        "id": 99,
+        "title": "Immanuel Kant",
+        "link": "/wiki/Immanuel_Kant"
+    },
+    {
+        "id": 100,
+        "title": "Ren\u00e9 Descartes",
+        "link": "/wiki/Ren%C3%A9_Descartes"
+    },
+    {
+        "id": 101,
+        "title": "Linguistic turn",
+        "link": "/wiki/Linguistic_turn"
+    },
+    {
+        "id": 102,
+        "title": "Ludwig Wittgenstein",
+        "link": "/wiki/Ludwig_Wittgenstein"
+    },
+    {
+        "id": 103,
+        "title": "Mind",
+        "link": "/wiki/Mind"
+    },
+    {
+        "id": 104,
+        "title": "Human brain",
+        "link": "/wiki/Human_brain"
+    },
+    {
+        "id": 105,
+        "title": "Creole languages",
+        "link": "/wiki/Creole_languages"
+    },
+    {
+        "id": 106,
+        "title": "Nicaraguan Sign Language",
+        "link": "/wiki/Nicaraguan_Sign_Language"
+    },
+    {
+        "id": 107,
+        "title": "Innatism",
+        "link": "/wiki/Innatism"
+    },
+    {
+        "id": 108,
+        "title": "Noam Chomsky",
+        "link": "/wiki/Noam_Chomsky"
+    },
+    {
+        "id": 109,
+        "title": "Universal Grammar",
+        "link": "/wiki/Universal_Grammar"
+    },
+    {
+        "id": 110,
+        "title": "Jerry Fodor",
+        "link": "/wiki/Jerry_Fodor"
+    },
+    {
+        "id": 111,
+        "title": "Cognitive science",
+        "link": "/wiki/Cognitive_science"
+    },
+    {
+        "id": 112,
+        "title": "Neurolinguistics",
+        "link": "/wiki/Neurolinguistics"
+    },
+    {
+        "id": 113,
+        "title": "Formal system",
+        "link": "/wiki/Formal_system"
+    },
+    {
+        "id": 114,
+        "title": "Structural linguistics",
+        "link": "/wiki/Structural_linguistics"
+    },
+    {
+        "id": 115,
+        "title": "Structuralism",
+        "link": "/wiki/Structuralism"
+    },
+    {
+        "id": 116,
+        "title": "Ferdinand de Saussure",
+        "link": "/wiki/Ferdinand_de_Saussure"
+    },
+    {
+        "id": 117,
+        "title": "Noam Chomsky",
+        "link": "/wiki/Noam_Chomsky"
+    },
+    {
+        "id": 118,
+        "title": "Generative linguistics",
+        "link": "/wiki/Generative_linguistics"
+    },
+    {
+        "id": 119,
+        "title": "Formal logic",
+        "link": "/wiki/Formal_logic"
+    },
+    {
+        "id": 120,
+        "title": "Formal linguistics",
+        "link": "/wiki/Formal_linguistics"
+    },
+    {
+        "id": 121,
+        "title": "Computational linguistics",
+        "link": "/wiki/Computational_linguistics"
+    },
+    {
+        "id": 122,
+        "title": "Alfred Tarski",
+        "link": "/wiki/Alfred_Tarski"
+    },
+    {
+        "id": 123,
+        "title": "Bertrand Russell",
+        "link": "/wiki/Bertrand_Russell"
+    },
+    {
+        "id": 124,
+        "title": "Formal logic",
+        "link": "/wiki/Formal_logic"
+    },
+    {
+        "id": 125,
+        "title": "Functional theories of grammar",
+        "link": "/wiki/Functional_theories_of_grammar"
+    },
+    {
+        "id": 126,
+        "title": "Pragmatics",
+        "link": "/wiki/Pragmatics"
+    },
+    {
+        "id": 127,
+        "title": "Cognitive linguistics",
+        "link": "/wiki/Cognitive_linguistics"
+    },
+    {
+        "id": 128,
+        "title": "Sociolinguistics",
+        "link": "/wiki/Sociolinguistics"
+    },
+    {
+        "id": 129,
+        "title": "Linguistic anthropology",
+        "link": "/wiki/Linguistic_anthropology"
+    },
+    {
+        "id": 130,
+        "title": "Linguistic typology",
+        "link": "/wiki/Linguistic_typology"
+    },
+    {
+        "id": 131,
+        "title": "Grammaticalization",
+        "link": "/wiki/Grammaticalization"
+    },
+    {
+        "id": 132,
+        "title": "Ludwig Wittgenstein",
+        "link": "/wiki/Ludwig_Wittgenstein"
+    },
+    {
+        "id": 133,
+        "title": "J.L. Austin",
+        "link": "/wiki/J.L._Austin"
+    },
+    {
+        "id": 134,
+        "title": "Paul Grice",
+        "link": "/wiki/Paul_Grice"
+    },
+    {
+        "id": 135,
+        "title": "John Searle",
+        "link": "/wiki/John_Searle"
+    },
+    {
+        "id": 136,
+        "title": "Willard van Orman Quine",
+        "link": "/wiki/Willard_van_Orman_Quine"
+    },
+    {
+        "id": 137,
+        "title": "Charles Hockett",
+        "link": "/wiki/Charles_Hockett"
+    },
+    {
+        "id": 138,
+        "title": "Hockett's design features",
+        "link": "/wiki/Hockett%27s_design_features"
+    },
+    {
+        "id": 139,
+        "title": "Animal language",
+        "link": "/wiki/Animal_language"
+    },
+    {
+        "id": 140,
+        "title": "Bee learning and communication",
+        "link": "/wiki/Bee_learning_and_communication"
+    },
+    {
+        "id": 141,
+        "title": "Great ape language",
+        "link": "/wiki/Great_ape_language"
+    },
+    {
+        "id": 142,
+        "title": "Productivity (linguistics)",
+        "link": "/wiki/Productivity_(linguistics)"
+    },
+    {
+        "id": 143,
+        "title": "Chestnut-crowned babbler",
+        "link": "/wiki/Chestnut-crowned_babbler"
+    },
+    {
+        "id": 144,
+        "title": "Southern pied babbler",
+        "link": "/wiki/Southern_pied_babbler"
+    },
+    {
+        "id": 145,
+        "title": "Bonobo",
+        "link": "/wiki/Bonobo"
+    },
+    {
+        "id": 146,
+        "title": "Kanzi",
+        "link": "/wiki/Kanzi"
+    },
+    {
+        "id": 147,
+        "title": "Lexigram",
+        "link": "/wiki/Lexigram"
+    },
+    {
+        "id": 148,
+        "title": "Grammatical categories",
+        "link": "/wiki/Grammatical_categories"
+    },
+    {
+        "id": 149,
+        "title": "Recursion",
+        "link": "/wiki/Recursion#Recursion_in_language"
+    },
+    {
+        "id": 150,
+        "title": "Sign language",
+        "link": "/wiki/Sign_language"
+    },
+    {
+        "id": 151,
+        "title": "Braille",
+        "link": "/wiki/Braille"
+    },
+    {
+        "id": 152,
+        "title": "Displacement (linguistics)",
+        "link": "/wiki/Displacement_(linguistics)"
+    },
+    {
+        "id": 153,
+        "title": "Bee",
+        "link": "/wiki/Bee"
+    },
+    {
+        "id": 154,
+        "title": "Noam Chomsky",
+        "link": "/wiki/Noam_Chomsky"
+    },
+    {
+        "id": 155,
+        "title": "Steven Pinker",
+        "link": "/wiki/Steven_Pinker"
+    },
+    {
+        "id": 156,
+        "title": "Animal cognition",
+        "link": "/wiki/Animal_cognition"
+    },
+    {
+        "id": 157,
+        "title": "Michael Tomasello",
+        "link": "/wiki/Michael_Tomasello"
+    },
+    {
+        "id": 158,
+        "title": "Animal communication",
+        "link": "/wiki/Animal_communication"
+    },
+    {
+        "id": 159,
+        "title": "Music",
+        "link": "/wiki/Music"
+    },
+    {
+        "id": 160,
+        "title": "Jean-Jacques Rousseau",
+        "link": "/wiki/Jean-Jacques_Rousseau"
+    },
+    {
+        "id": 161,
+        "title": "Johann Gottfried Herder",
+        "link": "/wiki/Johann_Gottfried_Herder"
+    },
+    {
+        "id": 162,
+        "title": "Wilhelm von Humboldt",
+        "link": "/wiki/Wilhelm_von_Humboldt"
+    },
+    {
+        "id": 163,
+        "title": "Charles Darwin",
+        "link": "/wiki/Charles_Darwin"
+    },
+    {
+        "id": 164,
+        "title": "Steven Mithen",
+        "link": "/wiki/Steven_Mithen"
+    },
+    {
+        "id": 165,
+        "title": "Stephen R. Anderson",
+        "link": "/wiki/Stephen_R._Anderson"
+    },
+    {
+        "id": 166,
+        "title": "Prehistory",
+        "link": "/wiki/Prehistory"
+    },
+    {
+        "id": 167,
+        "title": "Larynx",
+        "link": "/wiki/Larynx"
+    },
+    {
+        "id": 168,
+        "title": "Australopithecine",
+        "link": "/wiki/Australopithecine"
+    },
+    {
+        "id": 169,
+        "title": "Great ape",
+        "link": "/wiki/Great_ape"
+    },
+    {
+        "id": 170,
+        "title": "Origin of language",
+        "link": "/wiki/Origin_of_language#Ardipithecus_ramidus"
+    },
+    {
+        "id": 171,
+        "title": "Homo",
+        "link": "/wiki/Homo"
+    },
+    {
+        "id": 172,
+        "title": "Homo habilis",
+        "link": "/wiki/Homo_habilis"
+    },
+    {
+        "id": 173,
+        "title": "Homo erectus",
+        "link": "/wiki/Homo_erectus"
+    },
+    {
+        "id": 174,
+        "title": "Homo heidelbergensis",
+        "link": "/wiki/Homo_heidelbergensis"
+    },
+    {
+        "id": 175,
+        "title": "Anatomically modern humans",
+        "link": "/wiki/Anatomically_modern_humans"
+    },
+    {
+        "id": 176,
+        "title": "Behavioral modernity",
+        "link": "/wiki/Behavioral_modernity"
+    },
+    {
+        "id": 177,
+        "title": "Linguistics",
+        "link": "/wiki/Linguistics"
+    },
+    {
+        "id": 178,
+        "title": "India",
+        "link": "/wiki/India"
+    },
+    {
+        "id": 179,
+        "title": "Brahmi script",
+        "link": "/wiki/Brahmi_script"
+    },
+    {
+        "id": 180,
+        "title": "Descriptive linguistics",
+        "link": "/wiki/Descriptive_linguistics"
+    },
+    {
+        "id": 181,
+        "title": "Theoretical linguistics",
+        "link": "/wiki/Theoretical_linguistics"
+    },
+    {
+        "id": 182,
+        "title": "Sociolinguistics",
+        "link": "/wiki/Sociolinguistics"
+    },
+    {
+        "id": 183,
+        "title": "Neurolinguistics",
+        "link": "/wiki/Neurolinguistics"
+    },
+    {
+        "id": 184,
+        "title": "Computational linguistics",
+        "link": "/wiki/Computational_linguistics"
+    },
+    {
+        "id": 185,
+        "title": "Historical linguistics",
+        "link": "/wiki/Historical_linguistics"
+    },
+    {
+        "id": 186,
+        "title": "Comparative method",
+        "link": "/wiki/Comparative_method"
+    },
+    {
+        "id": 187,
+        "title": "India",
+        "link": "/wiki/India"
+    },
+    {
+        "id": 188,
+        "title": "P\u0101\u1e47ini",
+        "link": "/wiki/P%C4%81%E1%B9%87ini"
+    },
+    {
+        "id": 189,
+        "title": "Sanskrit",
+        "link": "/wiki/Sanskrit"
+    },
+    {
+        "id": 190,
+        "title": "Morphology (linguistics)",
+        "link": "/wiki/Morphology_(linguistics)"
+    },
+    {
+        "id": 191,
+        "title": "Sumer",
+        "link": "/wiki/Sumer"
+    },
+    {
+        "id": 192,
+        "title": "Sumerian language",
+        "link": "/wiki/Sumerian_language"
+    },
+    {
+        "id": 193,
+        "title": "Akkadian language",
+        "link": "/wiki/Akkadian_language"
+    },
+    {
+        "id": 194,
+        "title": "Port-Royal Grammar",
+        "link": "/wiki/Port-Royal_Grammar"
+    },
+    {
+        "id": 195,
+        "title": "Comparative method",
+        "link": "/wiki/Comparative_method"
+    },
+    {
+        "id": 196,
+        "title": "Philologist",
+        "link": "/wiki/Philologist"
+    },
+    {
+        "id": 197,
+        "title": "William Jones (philologist)",
+        "link": "/wiki/William_Jones_(philologist)"
+    },
+    {
+        "id": 198,
+        "title": "Comparative linguistics",
+        "link": "/wiki/Comparative_linguistics"
+    },
+    {
+        "id": 199,
+        "title": "Wilhelm von Humboldt",
+        "link": "/wiki/Wilhelm_von_Humboldt"
+    },
+    {
+        "id": 200,
+        "title": "Ferdinand de Saussure",
+        "link": "/wiki/Ferdinand_de_Saussure"
+    },
+    {
+        "id": 201,
+        "title": "Diachronic linguistics",
+        "link": "/wiki/Diachronic_linguistics"
+    },
+    {
+        "id": 202,
+        "title": "Synchronic linguistics",
+        "link": "/wiki/Synchronic_linguistics"
+    },
+    {
+        "id": 203,
+        "title": "Syntagmatic analysis",
+        "link": "/wiki/Syntagmatic_analysis"
+    },
+    {
+        "id": 204,
+        "title": "Paradigmatic analysis",
+        "link": "/wiki/Paradigmatic_analysis"
+    },
+    {
+        "id": 205,
+        "title": "Langue and parole",
+        "link": "/wiki/Langue_and_parole"
+    },
+    {
+        "id": 206,
+        "title": "Noam Chomsky",
+        "link": "/wiki/Noam_Chomsky"
+    },
+    {
+        "id": 207,
+        "title": "Generative linguistics",
+        "link": "/wiki/Generative_linguistics"
+    },
+    {
+        "id": 208,
+        "title": "Universal Grammar",
+        "link": "/wiki/Universal_Grammar"
+    },
+    {
+        "id": 209,
+        "title": "Functional theories of grammar",
+        "link": "/wiki/Functional_theories_of_grammar"
+    },
+    {
+        "id": 210,
+        "title": "Formal grammar",
+        "link": "/wiki/Formal_grammar"
+    },
+    {
+        "id": 211,
+        "title": "Cognitive linguistics",
+        "link": "/wiki/Cognitive_linguistics"
+    },
+    {
+        "id": 212,
+        "title": "Genetics",
+        "link": "/wiki/Genetics"
+    },
+    {
+        "id": 213,
+        "title": "FOXP2",
+        "link": "/wiki/FOXP2"
+    },
+    {
+        "id": 214,
+        "title": "Developmental verbal dyspraxia",
+        "link": "/wiki/Developmental_verbal_dyspraxia"
+    },
+    {
+        "id": 215,
+        "title": "Mutation",
+        "link": "/wiki/Mutation"
+    },
+    {
+        "id": 216,
+        "title": "Neurolinguistics",
+        "link": "/wiki/Neurolinguistics"
+    },
+    {
+        "id": 217,
+        "title": "Wernicke's area",
+        "link": "/wiki/Wernicke%27s_area"
+    },
+    {
+        "id": 218,
+        "title": "Superior temporal gyrus",
+        "link": "/wiki/Superior_temporal_gyrus"
+    },
+    {
+        "id": 219,
+        "title": "Receptive aphasia",
+        "link": "/wiki/Receptive_aphasia"
+    },
+    {
+        "id": 220,
+        "title": "Syntax",
+        "link": "/wiki/Syntax"
+    },
+    {
+        "id": 221,
+        "title": "Broca's area",
+        "link": "/wiki/Broca%27s_area"
+    },
+    {
+        "id": 222,
+        "title": "Inferior frontal gyrus",
+        "link": "/wiki/Inferior_frontal_gyrus"
+    },
+    {
+        "id": 223,
+        "title": "Expressive aphasia",
+        "link": "/wiki/Expressive_aphasia"
+    },
+    {
+        "id": 224,
+        "title": "Word repetition",
+        "link": "/wiki/Word_repetition"
+    },
+    {
+        "id": 225,
+        "title": "Functional magnetic resonance imaging",
+        "link": "/wiki/Functional_magnetic_resonance_imaging"
+    },
+    {
+        "id": 226,
+        "title": "Electrophysiology",
+        "link": "/wiki/Electrophysiology"
+    },
+    {
+        "id": 227,
+        "title": "Sound",
+        "link": "/wiki/Sound"
+    },
+    {
+        "id": 228,
+        "title": "Ear drum",
+        "link": "/wiki/Ear_drum"
+    },
+    {
+        "id": 229,
+        "title": "Larynx",
+        "link": "/wiki/Larynx"
+    },
+    {
+        "id": 230,
+        "title": "Segment (linguistics)",
+        "link": "/wiki/Segment_(linguistics)"
+    },
+    {
+        "id": 231,
+        "title": "Stress (linguistics)",
+        "link": "/wiki/Stress_(linguistics)"
+    },
+    {
+        "id": 232,
+        "title": "Phonation",
+        "link": "/wiki/Phonation"
+    },
+    {
+        "id": 233,
+        "title": "Timbre",
+        "link": "/wiki/Timbre"
+    },
+    {
+        "id": 234,
+        "title": "Prosody (linguistics)",
+        "link": "/wiki/Prosody_(linguistics)"
+    },
+    {
+        "id": 235,
+        "title": "Intonation (linguistics)",
+        "link": "/wiki/Intonation_(linguistics)"
+    },
+    {
+        "id": 236,
+        "title": "Consonant",
+        "link": "/wiki/Consonant"
+    },
+    {
+        "id": 237,
+        "title": "Vowel",
+        "link": "/wiki/Vowel"
+    },
+    {
+        "id": 238,
+        "title": "Syllable",
+        "link": "/wiki/Syllable"
+    },
+    {
+        "id": 239,
+        "title": "Acoustics",
+        "link": "/wiki/Acoustics"
+    },
+    {
+        "id": 240,
+        "title": "Formant",
+        "link": "/wiki/Formant"
+    },
+    {
+        "id": 241,
+        "title": "Spectrogram",
+        "link": "/wiki/Spectrogram"
+    },
+    {
+        "id": 242,
+        "title": "Close vowel",
+        "link": "/wiki/Close_vowel"
+    },
+    {
+        "id": 243,
+        "title": "Open vowel",
+        "link": "/wiki/Open_vowel"
+    },
+    {
+        "id": 244,
+        "title": "Roundedness",
+        "link": "/wiki/Roundedness"
+    },
+    {
+        "id": 245,
+        "title": "Rounded front vowel",
+        "link": "/wiki/Rounded_front_vowel"
+    },
+    {
+        "id": 246,
+        "title": "Alveolar ridge",
+        "link": "/wiki/Alveolar_ridge"
+    },
+    {
+        "id": 247,
+        "title": "Palate",
+        "link": "/wiki/Palate"
+    },
+    {
+        "id": 248,
+        "title": "Soft palate",
+        "link": "/wiki/Soft_palate"
+    },
+    {
+        "id": 249,
+        "title": "Uvula",
+        "link": "/wiki/Uvula"
+    },
+    {
+        "id": 250,
+        "title": "Glottis",
+        "link": "/wiki/Glottis"
+    },
+    {
+        "id": 251,
+        "title": "Manner of articulation",
+        "link": "/wiki/Manner_of_articulation"
+    },
+    {
+        "id": 252,
+        "title": "Occlusive",
+        "link": "/wiki/Occlusive"
+    },
+    {
+        "id": 253,
+        "title": "Stop consonant",
+        "link": "/wiki/Stop_consonant"
+    },
+    {
+        "id": 254,
+        "title": "Fricative",
+        "link": "/wiki/Fricative"
+    },
+    {
+        "id": 255,
+        "title": "Approximant consonant",
+        "link": "/wiki/Approximant_consonant"
+    },
+    {
+        "id": 256,
+        "title": "Voice (phonetics)",
+        "link": "/wiki/Voice_(phonetics)"
+    },
+    {
+        "id": 257,
+        "title": "Sibilant",
+        "link": "/wiki/Sibilant"
+    },
+    {
+        "id": 258,
+        "title": "Voiced alveolar sibilant",
+        "link": "/wiki/Voiced_alveolar_sibilant#Voiced_alveolar_sibilant"
+    },
+    {
+        "id": 259,
+        "title": "Nasal consonant",
+        "link": "/wiki/Nasal_consonant"
+    },
+    {
+        "id": 260,
+        "title": "Nasalization",
+        "link": "/wiki/Nasalization"
+    },
+    {
+        "id": 261,
+        "title": "Lateral consonant",
+        "link": "/wiki/Lateral_consonant"
+    },
+    {
+        "id": 262,
+        "title": "Rhotics",
+        "link": "/wiki/Rhotics"
+    },
+    {
+        "id": 263,
+        "title": "Symbolic communication",
+        "link": "/wiki/Symbolic_communication"
+    },
+    {
+        "id": 264,
+        "title": "Sign (semiotics)",
+        "link": "/wiki/Sign_(semiotics)"
+    },
+    {
+        "id": 265,
+        "title": "Meaning (semiotics)",
+        "link": "/wiki/Meaning_(semiotics)"
+    },
+    {
+        "id": 266,
+        "title": "Code (semiotics)",
+        "link": "/wiki/Code_(semiotics)"
+    },
+    {
+        "id": 267,
+        "title": "Semiosis",
+        "link": "/wiki/Semiosis"
+    },
+    {
+        "id": 268,
+        "title": "Semiotics",
+        "link": "/wiki/Semiotics"
+    },
+    {
+        "id": 269,
+        "title": "Syntax",
+        "link": "/wiki/Syntax"
+    },
+    {
+        "id": 270,
+        "title": "Semantics",
+        "link": "/wiki/Semantics"
+    },
+    {
+        "id": 271,
+        "title": "Vocabulary",
+        "link": "/wiki/Vocabulary"
+    },
+    {
+        "id": 272,
+        "title": "Canis familiaris",
+        "link": "/wiki/Canis_familiaris"
+    },
+    {
+        "id": 273,
+        "title": "Lexicon",
+        "link": "/wiki/Lexicon"
+    },
+    {
+        "id": 274,
+        "title": "Lexeme",
+        "link": "/wiki/Lexeme"
+    },
+    {
+        "id": 275,
+        "title": "Grammatical category",
+        "link": "/wiki/Grammatical_category"
+    },
+    {
+        "id": 276,
+        "title": "Predicate (grammar)",
+        "link": "/wiki/Predicate_(grammar)"
+    },
+    {
+        "id": 277,
+        "title": "Truth value",
+        "link": "/wiki/Truth_value"
+    },
+    {
+        "id": 278,
+        "title": "Pragmatics",
+        "link": "/wiki/Pragmatics"
+    },
+    {
+        "id": 279,
+        "title": "Phonology",
+        "link": "/wiki/Phonology"
+    },
+    {
+        "id": 280,
+        "title": "Phonemes",
+        "link": "/wiki/Phonemes"
+    },
+    {
+        "id": 281,
+        "title": "Minimal pair",
+        "link": "/wiki/Minimal_pair"
+    },
+    {
+        "id": 282,
+        "title": "Aspiration (linguistics)",
+        "link": "/wiki/Aspiration_(linguistics)"
+    },
+    {
+        "id": 283,
+        "title": "Korean language",
+        "link": "/wiki/Korean_language"
+    },
+    {
+        "id": 284,
+        "title": "Hindi",
+        "link": "/wiki/Hindi"
+    },
+    {
+        "id": 285,
+        "title": "Allophones",
+        "link": "/wiki/Allophones"
+    },
+    {
+        "id": 286,
+        "title": "Mandarin Chinese",
+        "link": "/wiki/Mandarin_Chinese"
+    },
+    {
+        "id": 287,
+        "title": "Oral language",
+        "link": "/wiki/Oral_language"
+    },
+    {
+        "id": 288,
+        "title": "Vowels",
+        "link": "/wiki/Vowels"
+    },
+    {
+        "id": 289,
+        "title": "Consonants",
+        "link": "/wiki/Consonants"
+    },
+    {
+        "id": 290,
+        "title": "Syllable",
+        "link": "/wiki/Syllable"
+    },
+    {
+        "id": 291,
+        "title": "Stress (linguistics)",
+        "link": "/wiki/Stress_(linguistics)"
+    },
+    {
+        "id": 292,
+        "title": "Pitch accent",
+        "link": "/wiki/Pitch_accent"
+    },
+    {
+        "id": 293,
+        "title": "Vowel length",
+        "link": "/wiki/Vowel_length"
+    },
+    {
+        "id": 294,
+        "title": "Tonal language",
+        "link": "/wiki/Tonal_language"
+    },
+    {
+        "id": 295,
+        "title": "Suprasegmental",
+        "link": "/wiki/Suprasegmental"
+    },
+    {
+        "id": 296,
+        "title": "Rotokas language",
+        "link": "/wiki/Rotokas_language"
+    },
+    {
+        "id": 297,
+        "title": "Pirah\u00e3 language",
+        "link": "/wiki/Pirah%C3%A3_language"
+    },
+    {
+        "id": 298,
+        "title": "Taa language",
+        "link": "/wiki/Taa_language#Phonology"
+    },
+    {
+        "id": 299,
+        "title": "Sign language",
+        "link": "/wiki/Sign_language"
+    },
+    {
+        "id": 300,
+        "title": "Phoneme",
+        "link": "/wiki/Phoneme#Phonemes_in_sign_languages"
+    },
+    {
+        "id": 301,
+        "title": "Chereme",
+        "link": "/wiki/Chereme"
+    },
+    {
+        "id": 302,
+        "title": "Writing system",
+        "link": "/wiki/Writing_system"
+    },
+    {
+        "id": 303,
+        "title": "Latin alphabet",
+        "link": "/wiki/Latin_alphabet"
+    },
+    {
+        "id": 304,
+        "title": "Inuktitut",
+        "link": "/wiki/Inuktitut"
+    },
+    {
+        "id": 305,
+        "title": "Logographic",
+        "link": "/wiki/Logographic"
+    },
+    {
+        "id": 306,
+        "title": "Arabic script",
+        "link": "/wiki/Arabic_script"
+    },
+    {
+        "id": 307,
+        "title": "International Phonetic Alphabet",
+        "link": "/wiki/International_Phonetic_Alphabet"
+    },
+    {
+        "id": 308,
+        "title": "Morpheme",
+        "link": "/wiki/Morpheme"
+    },
+    {
+        "id": 309,
+        "title": "Word",
+        "link": "/wiki/Word"
+    },
+    {
+        "id": 310,
+        "title": "Affix",
+        "link": "/wiki/Affix"
+    },
+    {
+        "id": 311,
+        "title": "Morphology (linguistics)",
+        "link": "/wiki/Morphology_(linguistics)"
+    },
+    {
+        "id": 312,
+        "title": "Morphosyntactic alignment",
+        "link": "/wiki/Morphosyntactic_alignment"
+    },
+    {
+        "id": 313,
+        "title": "Grammatical tense",
+        "link": "/wiki/Grammatical_tense"
+    },
+    {
+        "id": 314,
+        "title": "Preposition and postposition",
+        "link": "/wiki/Preposition_and_postposition"
+    },
+    {
+        "id": 315,
+        "title": "Grammatical person",
+        "link": "/wiki/Grammatical_person"
+    },
+    {
+        "id": 316,
+        "title": "Parts of speech",
+        "link": "/wiki/Parts_of_speech"
+    },
+    {
+        "id": 317,
+        "title": "Noun",
+        "link": "/wiki/Noun"
+    },
+    {
+        "id": 318,
+        "title": "Verb",
+        "link": "/wiki/Verb"
+    },
+    {
+        "id": 319,
+        "title": "Adjective",
+        "link": "/wiki/Adjective"
+    },
+    {
+        "id": 320,
+        "title": "Korean language",
+        "link": "/wiki/Korean_language"
+    },
+    {
+        "id": 321,
+        "title": "Predicate (grammar)",
+        "link": "/wiki/Predicate_(grammar)"
+    },
+    {
+        "id": 322,
+        "title": "Argument (linguistics)",
+        "link": "/wiki/Argument_(linguistics)"
+    },
+    {
+        "id": 323,
+        "title": "Transitivity (grammar)",
+        "link": "/wiki/Transitivity_(grammar)"
+    },
+    {
+        "id": 324,
+        "title": "Transitive verb",
+        "link": "/wiki/Transitive_verb"
+    },
+    {
+        "id": 325,
+        "title": "Conjunction (grammar)",
+        "link": "/wiki/Conjunction_(grammar)"
+    },
+    {
+        "id": 326,
+        "title": "Article (grammar)",
+        "link": "/wiki/Article_(grammar)"
+    },
+    {
+        "id": 327,
+        "title": "Interjections",
+        "link": "/wiki/Interjections"
+    },
+    {
+        "id": 328,
+        "title": "Ideophones",
+        "link": "/wiki/Ideophones"
+    },
+    {
+        "id": 329,
+        "title": "Classifier (linguistics)",
+        "link": "/wiki/Classifier_(linguistics)"
+    },
+    {
+        "id": 330,
+        "title": "Japanese language",
+        "link": "/wiki/Japanese_language"
+    },
+    {
+        "id": 331,
+        "title": "Morphology (linguistics)",
+        "link": "/wiki/Morphology_(linguistics)"
+    },
+    {
+        "id": 332,
+        "title": "Morpheme",
+        "link": "/wiki/Morpheme"
+    },
+    {
+        "id": 333,
+        "title": "Root (linguistics)",
+        "link": "/wiki/Root_(linguistics)"
+    },
+    {
+        "id": 334,
+        "title": "Affix",
+        "link": "/wiki/Affix"
+    },
+    {
+        "id": 335,
+        "title": "Prefix",
+        "link": "/wiki/Prefix"
+    },
+    {
+        "id": 336,
+        "title": "Suffix",
+        "link": "/wiki/Suffix"
+    },
+    {
+        "id": 337,
+        "title": "Infix",
+        "link": "/wiki/Infix"
+    },
+    {
+        "id": 338,
+        "title": "Ablaut",
+        "link": "/wiki/Ablaut"
+    },
+    {
+        "id": 339,
+        "title": "Inflection",
+        "link": "/wiki/Inflection"
+    },
+    {
+        "id": 340,
+        "title": "Morphological derivation",
+        "link": "/wiki/Morphological_derivation"
+    },
+    {
+        "id": 341,
+        "title": "Isolating language",
+        "link": "/wiki/Isolating_language"
+    },
+    {
+        "id": 342,
+        "title": "Nominative",
+        "link": "/wiki/Nominative"
+    },
+    {
+        "id": 343,
+        "title": "Fusional languages",
+        "link": "/wiki/Fusional_languages"
+    },
+    {
+        "id": 344,
+        "title": "Agglutinative languages",
+        "link": "/wiki/Agglutinative_languages"
+    },
+    {
+        "id": 345,
+        "title": "Turkish language",
+        "link": "/wiki/Turkish_language"
+    },
+    {
+        "id": 346,
+        "title": "Polysynthetic languages",
+        "link": "/wiki/Polysynthetic_languages"
+    },
+    {
+        "id": 347,
+        "title": "Persian language",
+        "link": "/wiki/Persian_language"
+    },
+    {
+        "id": 348,
+        "title": "Yupik language",
+        "link": "/wiki/Yupik_language"
+    },
+    {
+        "id": 349,
+        "title": "Agreement (linguistics)",
+        "link": "/wiki/Agreement_(linguistics)"
+    },
+    {
+        "id": 350,
+        "title": "Basque language",
+        "link": "/wiki/Basque_language"
+    },
+    {
+        "id": 351,
+        "title": "Latin language",
+        "link": "/wiki/Latin_language"
+    },
+    {
+        "id": 352,
+        "title": "Accusative case",
+        "link": "/wiki/Accusative_case"
+    },
+    {
+        "id": 353,
+        "title": "Object (grammar)",
+        "link": "/wiki/Object_(grammar)"
+    },
+    {
+        "id": 354,
+        "title": "Nominative case",
+        "link": "/wiki/Nominative_case"
+    },
+    {
+        "id": 355,
+        "title": "Wh-movement",
+        "link": "/wiki/Wh-movement"
+    },
+    {
+        "id": 356,
+        "title": "Focus (linguistics)",
+        "link": "/wiki/Focus_(linguistics)"
+    },
+    {
+        "id": 357,
+        "title": "Phrase",
+        "link": "/wiki/Phrase"
+    },
+    {
+        "id": 358,
+        "title": "Word order",
+        "link": "/wiki/Word_order"
+    },
+    {
+        "id": 359,
+        "title": "Verb",
+        "link": "/wiki/Verb"
+    },
+    {
+        "id": 360,
+        "title": "Sentence (linguistics)",
+        "link": "/wiki/Sentence_(linguistics)"
+    },
+    {
+        "id": 361,
+        "title": "Subject\u2013verb\u2013object",
+        "link": "/wiki/Subject%E2%80%93verb%E2%80%93object"
+    },
+    {
+        "id": 362,
+        "title": "Australian Aboriginal languages",
+        "link": "/wiki/Australian_Aboriginal_languages"
+    },
+    {
+        "id": 363,
+        "title": "Gamilaraay language",
+        "link": "/wiki/Gamilaraay_language"
+    },
+    {
+        "id": 364,
+        "title": "Subject-object-verb",
+        "link": "/wiki/Subject-object-verb"
+    },
+    {
+        "id": 365,
+        "title": "Prepositions",
+        "link": "/wiki/Prepositions"
+    },
+    {
+        "id": 366,
+        "title": "Postpositions",
+        "link": "/wiki/Postpositions"
+    },
+    {
+        "id": 367,
+        "title": "Linguistic universals",
+        "link": "/wiki/Linguistic_universals"
+    },
+    {
+        "id": 368,
+        "title": "Subject-object-verb",
+        "link": "/wiki/Subject-object-verb"
+    },
+    {
+        "id": 369,
+        "title": "Nominative\u2013accusative language",
+        "link": "/wiki/Nominative%E2%80%93accusative_language"
+    },
+    {
+        "id": 370,
+        "title": "Ergativity",
+        "link": "/wiki/Ergativity"
+    },
+    {
+        "id": 371,
+        "title": "Tripartite language",
+        "link": "/wiki/Tripartite_language"
+    },
+    {
+        "id": 372,
+        "title": "Speech community",
+        "link": "/wiki/Speech_community"
+    },
+    {
+        "id": 373,
+        "title": "Language acquisition",
+        "link": "/wiki/Language_acquisition"
+    },
+    {
+        "id": 374,
+        "title": "Communicate",
+        "link": "/wiki/Communicate"
+    },
+    {
+        "id": 375,
+        "title": "Language contact",
+        "link": "/wiki/Language_contact"
+    },
+    {
+        "id": 376,
+        "title": "Evolution",
+        "link": "/wiki/Evolution"
+    },
+    {
+        "id": 377,
+        "title": "Phylogenetic tree",
+        "link": "/wiki/Phylogenetic_tree"
+    },
+    {
+        "id": 378,
+        "title": "Diffusion",
+        "link": "/wiki/Diffusion"
+    },
+    {
+        "id": 379,
+        "title": "First language",
+        "link": "/wiki/First_language"
+    },
+    {
+        "id": 380,
+        "title": "Endangered language",
+        "link": "/wiki/Endangered_language"
+    },
+    {
+        "id": 381,
+        "title": "Deixis",
+        "link": "/wiki/Deixis"
+    },
+    {
+        "id": 382,
+        "title": "Speech act",
+        "link": "/wiki/Speech_act"
+    },
+    {
+        "id": 383,
+        "title": "Conversational implicature",
+        "link": "/wiki/Conversational_implicature"
+    },
+    {
+        "id": 384,
+        "title": "Communicative competence",
+        "link": "/wiki/Communicative_competence"
+    },
+    {
+        "id": 385,
+        "title": "Human development (biology)",
+        "link": "/wiki/Human_development_(biology)"
+    },
+    {
+        "id": 386,
+        "title": "Sign language",
+        "link": "/wiki/Sign_language"
+    },
+    {
+        "id": 387,
+        "title": "Oral language",
+        "link": "/wiki/Oral_language"
+    },
+    {
+        "id": 388,
+        "title": "The Descent of Man, and Selection in Relation to Sex",
+        "link": "/wiki/The_Descent_of_Man,_and_Selection_in_Relation_to_Sex"
+    },
+    {
+        "id": 389,
+        "title": "Charles Darwin",
+        "link": "/wiki/Charles_Darwin"
+    },
+    {
+        "id": 390,
+        "title": "Fetus",
+        "link": "/wiki/Fetus"
+    },
+    {
+        "id": 391,
+        "title": "Phone (phonetics)",
+        "link": "/wiki/Phone_(phonetics)"
+    },
+    {
+        "id": 392,
+        "title": "Babbling",
+        "link": "/wiki/Babbling"
+    },
+    {
+        "id": 393,
+        "title": "Handshape",
+        "link": "/wiki/Handshape"
+    },
+    {
+        "id": 394,
+        "title": "Vocabulary",
+        "link": "/wiki/Vocabulary"
+    },
+    {
+        "id": 395,
+        "title": "Word",
+        "link": "/wiki/Word"
+    },
+    {
+        "id": 396,
+        "title": "Utterance",
+        "link": "/wiki/Utterance"
+    },
+    {
+        "id": 397,
+        "title": "Holophrasis",
+        "link": "/wiki/Holophrasis"
+    },
+    {
+        "id": 398,
+        "title": "Telegraphic speech",
+        "link": "/wiki/Telegraphic_speech"
+    },
+    {
+        "id": 399,
+        "title": "Grammar",
+        "link": "/wiki/Grammar"
+    },
+    {
+        "id": 400,
+        "title": "Sociolinguistics",
+        "link": "/wiki/Sociolinguistics"
+    },
+    {
+        "id": 401,
+        "title": "Anthropological linguistics",
+        "link": "/wiki/Anthropological_linguistics"
+    },
+    {
+        "id": 402,
+        "title": "Linguistic anthropology",
+        "link": "/wiki/Linguistic_anthropology"
+    },
+    {
+        "id": 403,
+        "title": "Speech community",
+        "link": "/wiki/Speech_community"
+    },
+    {
+        "id": 404,
+        "title": "Variety (linguistics)",
+        "link": "/wiki/Variety_(linguistics)"
+    },
+    {
+        "id": 405,
+        "title": "Dialect",
+        "link": "/wiki/Dialect"
+    },
+    {
+        "id": 406,
+        "title": "Register (sociolinguistics)",
+        "link": "/wiki/Register_(sociolinguistics)"
+    },
+    {
+        "id": 407,
+        "title": "Style shifting",
+        "link": "/wiki/Style_shifting"
+    },
+    {
+        "id": 408,
+        "title": "Subculture",
+        "link": "/wiki/Subculture"
+    },
+    {
+        "id": 409,
+        "title": "Social class",
+        "link": "/wiki/Social_class"
+    },
+    {
+        "id": 410,
+        "title": "Dyirbal language",
+        "link": "/wiki/Dyirbal_language"
+    },
+    {
+        "id": 411,
+        "title": "Deixis",
+        "link": "/wiki/Deixis"
+    },
+    {
+        "id": 412,
+        "title": "Thai language",
+        "link": "/wiki/Thai_language"
+    },
+    {
+        "id": 413,
+        "title": "Burmese language",
+        "link": "/wiki/Burmese_language"
+    },
+    {
+        "id": 414,
+        "title": "Old Javanese",
+        "link": "/wiki/Old_Javanese"
+    },
+    {
+        "id": 415,
+        "title": "Writing systems",
+        "link": "/wiki/Writing_systems"
+    },
+    {
+        "id": 416,
+        "title": "Formal education",
+        "link": "/wiki/Formal_education"
+    },
+    {
+        "id": 417,
+        "title": "Bronze Age",
+        "link": "/wiki/Bronze_Age"
+    },
+    {
+        "id": 418,
+        "title": "4th millennium BC",
+        "link": "/wiki/4th_millennium_BC"
+    },
+    {
+        "id": 419,
+        "title": "Sumerian language",
+        "link": "/wiki/Sumerian_language"
+    },
+    {
+        "id": 420,
+        "title": "Cuneiform (script)",
+        "link": "/wiki/Cuneiform_(script)"
+    },
+    {
+        "id": 421,
+        "title": "Egyptian hieroglyphs",
+        "link": "/wiki/Egyptian_hieroglyphs"
+    },
+    {
+        "id": 422,
+        "title": "Cultural diffusion",
+        "link": "/wiki/Cultural_diffusion"
+    },
+    {
+        "id": 423,
+        "title": "Chinese script",
+        "link": "/wiki/Chinese_script"
+    },
+    {
+        "id": 424,
+        "title": "Pre-Columbian",
+        "link": "/wiki/Pre-Columbian"
+    },
+    {
+        "id": 425,
+        "title": "Mesoamerican writing systems",
+        "link": "/wiki/Mesoamerican_writing_systems"
+    },
+    {
+        "id": 426,
+        "title": "Olmec",
+        "link": "/wiki/Olmec"
+    },
+    {
+        "id": 427,
+        "title": "Maya script",
+        "link": "/wiki/Maya_script"
+    },
+    {
+        "id": 428,
+        "title": "Phonological change",
+        "link": "/wiki/Phonological_change"
+    },
+    {
+        "id": 429,
+        "title": "Sound change",
+        "link": "/wiki/Sound_change"
+    },
+    {
+        "id": 430,
+        "title": "Distinctive feature",
+        "link": "/wiki/Distinctive_feature"
+    },
+    {
+        "id": 431,
+        "title": "Chain shift",
+        "link": "/wiki/Chain_shift"
+    },
+    {
+        "id": 432,
+        "title": "Germanic languages",
+        "link": "/wiki/Germanic_languages"
+    },
+    {
+        "id": 433,
+        "title": "Grimm's law",
+        "link": "/wiki/Grimm%27s_law"
+    },
+    {
+        "id": 434,
+        "title": "Italic languages",
+        "link": "/wiki/Italic_languages"
+    },
+    {
+        "id": 435,
+        "title": "Great Vowel Shift",
+        "link": "/wiki/Great_Vowel_Shift"
+    },
+    {
+        "id": 436,
+        "title": "French language",
+        "link": "/wiki/French_language"
+    },
+    {
+        "id": 437,
+        "title": "Idiom",
+        "link": "/wiki/Idiom"
+    },
+    {
+        "id": 438,
+        "title": "Grammaticalized",
+        "link": "/wiki/Grammaticalized"
+    },
+    {
+        "id": 439,
+        "title": "Caribbean Spanish",
+        "link": "/wiki/Caribbean_Spanish"
+    },
+    {
+        "id": 440,
+        "title": "Standard Spanish",
+        "link": "/wiki/Standard_Spanish"
+    },
+    {
+        "id": 441,
+        "title": "Grammatical person",
+        "link": "/wiki/Grammatical_person"
+    },
+    {
+        "id": 442,
+        "title": "Drift (linguistics)",
+        "link": "/wiki/Drift_(linguistics)"
+    },
+    {
+        "id": 443,
+        "title": "Language ideology",
+        "link": "/wiki/Language_ideology"
+    },
+    {
+        "id": 444,
+        "title": "Trans-cultural diffusion",
+        "link": "/wiki/Trans-cultural_diffusion"
+    },
+    {
+        "id": 445,
+        "title": "Variety (linguistics)",
+        "link": "/wiki/Variety_(linguistics)"
+    },
+    {
+        "id": 446,
+        "title": "Multilingualism",
+        "link": "/wiki/Multilingualism"
+    },
+    {
+        "id": 447,
+        "title": "Human history",
+        "link": "/wiki/Human_history"
+    },
+    {
+        "id": 448,
+        "title": "Nation state",
+        "link": "/wiki/Nation_state"
+    },
+    {
+        "id": 449,
+        "title": "Sprachbund",
+        "link": "/wiki/Sprachbund"
+    },
+    {
+        "id": 450,
+        "title": "Balkan language area",
+        "link": "/wiki/Balkan_language_area"
+    },
+    {
+        "id": 451,
+        "title": "Mesoamerican language area",
+        "link": "/wiki/Mesoamerican_language_area"
+    },
+    {
+        "id": 452,
+        "title": "Ethiopian language area",
+        "link": "/wiki/Ethiopian_language_area"
+    },
+    {
+        "id": 453,
+        "title": "South Asia",
+        "link": "/wiki/South_Asia"
+    },
+    {
+        "id": 454,
+        "title": "Areal feature (linguistics)",
+        "link": "/wiki/Areal_feature_(linguistics)"
+    },
+    {
+        "id": 455,
+        "title": "Language convergence",
+        "link": "/wiki/Language_convergence"
+    },
+    {
+        "id": 456,
+        "title": "Loanword",
+        "link": "/wiki/Loanword"
+    },
+    {
+        "id": 457,
+        "title": "Relexification",
+        "link": "/wiki/Relexification"
+    },
+    {
+        "id": 458,
+        "title": "Mixed language",
+        "link": "/wiki/Mixed_language"
+    },
+    {
+        "id": 459,
+        "title": "Pidgins",
+        "link": "/wiki/Pidgins"
+    },
+    {
+        "id": 460,
+        "title": "Creole language",
+        "link": "/wiki/Creole_language"
+    },
+    {
+        "id": 461,
+        "title": "Tok Pisin",
+        "link": "/wiki/Tok_Pisin"
+    },
+    {
+        "id": 462,
+        "title": "Papua New-Guinea",
+        "link": "/wiki/Papua_New-Guinea"
+    },
+    {
+        "id": 463,
+        "title": "Austronesian languages",
+        "link": "/wiki/Austronesian_languages"
+    },
+    {
+        "id": 464,
+        "title": "Haitian Creole",
+        "link": "/wiki/Haitian_Creole"
+    },
+    {
+        "id": 465,
+        "title": "Haiti",
+        "link": "/wiki/Haiti"
+    },
+    {
+        "id": 466,
+        "title": "Michif language",
+        "link": "/wiki/Michif_language"
+    },
+    {
+        "id": 467,
+        "title": "Cree language",
+        "link": "/wiki/Cree_language"
+    },
+    {
+        "id": 468,
+        "title": "SIL Ethnologue",
+        "link": "/wiki/SIL_Ethnologue"
+    },
+    {
+        "id": 469,
+        "title": "Dialects",
+        "link": "/wiki/Dialects"
+    },
+    {
+        "id": 470,
+        "title": "Mutual intelligibility",
+        "link": "/wiki/Mutual_intelligibility"
+    },
+    {
+        "id": 471,
+        "title": "Danish language",
+        "link": "/wiki/Danish_language"
+    },
+    {
+        "id": 472,
+        "title": "Jutlandic dialect",
+        "link": "/wiki/Jutlandic_dialect"
+    },
+    {
+        "id": 473,
+        "title": "Language or dialect",
+        "link": "/wiki/Language_or_dialect"
+    },
+    {
+        "id": 474,
+        "title": "Dialect",
+        "link": "/wiki/Dialect"
+    },
+    {
+        "id": 475,
+        "title": "Aphorism",
+        "link": "/wiki/Aphorism"
+    },
+    {
+        "id": 476,
+        "title": "Max Weinreich",
+        "link": "/wiki/Max_Weinreich"
+    },
+    {
+        "id": 477,
+        "title": "A language is a dialect with an army and navy",
+        "link": "/wiki/A_language_is_a_dialect_with_an_army_and_navy"
+    },
+    {
+        "id": 478,
+        "title": "Hakka Chinese",
+        "link": "/wiki/Hakka_Chinese"
+    },
+    {
+        "id": 479,
+        "title": "Cantonese",
+        "link": "/wiki/Cantonese"
+    },
+    {
+        "id": 480,
+        "title": "Mandarin Chinese",
+        "link": "/wiki/Mandarin_Chinese"
+    },
+    {
+        "id": 481,
+        "title": "Swedish language",
+        "link": "/wiki/Swedish_language"
+    },
+    {
+        "id": 482,
+        "title": "Norwegian language",
+        "link": "/wiki/Norwegian_language"
+    },
+    {
+        "id": 483,
+        "title": "Yugoslav civil war",
+        "link": "/wiki/Yugoslav_civil_war"
+    },
+    {
+        "id": 484,
+        "title": "Serbo-Croatian language",
+        "link": "/wiki/Serbo-Croatian_language"
+    },
+    {
+        "id": 485,
+        "title": "Croatian language",
+        "link": "/wiki/Croatian_language"
+    },
+    {
+        "id": 486,
+        "title": "Serbian language",
+        "link": "/wiki/Serbian_language"
+    },
+    {
+        "id": 487,
+        "title": "Writing system",
+        "link": "/wiki/Writing_system"
+    },
+    {
+        "id": 488,
+        "title": "Mutual intelligibility",
+        "link": "/wiki/Mutual_intelligibility"
+    },
+    {
+        "id": 489,
+        "title": "Language family",
+        "link": "/wiki/Language_family"
+    },
+    {
+        "id": 490,
+        "title": "Language isolate",
+        "link": "/wiki/Language_isolate"
+    },
+    {
+        "id": 491,
+        "title": "Basque language",
+        "link": "/wiki/Basque_language"
+    },
+    {
+        "id": 492,
+        "title": "Zuni language",
+        "link": "/wiki/Zuni_language"
+    },
+    {
+        "id": 493,
+        "title": "New Mexico",
+        "link": "/wiki/New_Mexico"
+    },
+    {
+        "id": 494,
+        "title": "Pur\u00e9pecha language",
+        "link": "/wiki/Pur%C3%A9pecha_language"
+    },
+    {
+        "id": 495,
+        "title": "Ainu language",
+        "link": "/wiki/Ainu_language"
+    },
+    {
+        "id": 496,
+        "title": "Burushaski language",
+        "link": "/wiki/Burushaski_language"
+    },
+    {
+        "id": 497,
+        "title": "Pakistan",
+        "link": "/wiki/Pakistan"
+    },
+    {
+        "id": 498,
+        "title": "Indo-European languages",
+        "link": "/wiki/Indo-European_languages"
+    },
+    {
+        "id": 499,
+        "title": "English language",
+        "link": "/wiki/English_language"
+    },
+    {
+        "id": 500,
+        "title": "Spanish language",
+        "link": "/wiki/Spanish_language"
+    },
+    {
+        "id": 501,
+        "title": "French language",
+        "link": "/wiki/French_language"
+    },
+    {
+        "id": 502,
+        "title": "German language",
+        "link": "/wiki/German_language"
+    },
+    {
+        "id": 503,
+        "title": "Russian language",
+        "link": "/wiki/Russian_language"
+    },
+    {
+        "id": 504,
+        "title": "Hindustani language",
+        "link": "/wiki/Hindustani_language"
+    },
+    {
+        "id": 505,
+        "title": "Hindi",
+        "link": "/wiki/Hindi"
+    },
+    {
+        "id": 506,
+        "title": "Urdu",
+        "link": "/wiki/Urdu"
+    },
+    {
+        "id": 507,
+        "title": "Eurasia",
+        "link": "/wiki/Eurasia"
+    },
+    {
+        "id": 508,
+        "title": "Migration Period",
+        "link": "/wiki/Migration_Period"
+    },
+    {
+        "id": 509,
+        "title": "Wikipedia:Citation needed",
+        "link": "/wiki/Wikipedia:Citation_needed"
+    },
+    {
+        "id": 510,
+        "title": "History of colonialism",
+        "link": "/wiki/History_of_colonialism"
+    },
+    {
+        "id": 511,
+        "title": "Americas",
+        "link": "/wiki/Americas"
+    },
+    {
+        "id": 512,
+        "title": "Africa",
+        "link": "/wiki/Africa"
+    },
+    {
+        "id": 513,
+        "title": "Sino-Tibetan languages",
+        "link": "/wiki/Sino-Tibetan_languages"
+    },
+    {
+        "id": 514,
+        "title": "Mandarin Chinese",
+        "link": "/wiki/Mandarin_Chinese"
+    },
+    {
+        "id": 515,
+        "title": "Cantonese",
+        "link": "/wiki/Cantonese"
+    },
+    {
+        "id": 516,
+        "title": "Africa",
+        "link": "/wiki/Africa"
+    },
+    {
+        "id": 517,
+        "title": "Niger\u2013Congo languages",
+        "link": "/wiki/Niger%E2%80%93Congo_languages"
+    },
+    {
+        "id": 518,
+        "title": "Swahili language",
+        "link": "/wiki/Swahili_language"
+    },
+    {
+        "id": 519,
+        "title": "Shona language",
+        "link": "/wiki/Shona_language"
+    },
+    {
+        "id": 520,
+        "title": "Yoruba language",
+        "link": "/wiki/Yoruba_language"
+    },
+    {
+        "id": 521,
+        "title": "Afroasiatic languages",
+        "link": "/wiki/Afroasiatic_languages"
+    },
+    {
+        "id": 522,
+        "title": "Semitic languages",
+        "link": "/wiki/Semitic_languages"
+    },
+    {
+        "id": 523,
+        "title": "Arabic language",
+        "link": "/wiki/Arabic_language"
+    },
+    {
+        "id": 524,
+        "title": "Hebrew language",
+        "link": "/wiki/Hebrew_language"
+    },
+    {
+        "id": 525,
+        "title": "Sahara",
+        "link": "/wiki/Sahara"
+    },
+    {
+        "id": 526,
+        "title": "Berber languages",
+        "link": "/wiki/Berber_languages"
+    },
+    {
+        "id": 527,
+        "title": "Hausa language",
+        "link": "/wiki/Hausa_language"
+    },
+    {
+        "id": 528,
+        "title": "Austronesian languages",
+        "link": "/wiki/Austronesian_languages"
+    },
+    {
+        "id": 529,
+        "title": "Madagascar",
+        "link": "/wiki/Madagascar"
+    },
+    {
+        "id": 530,
+        "title": "Maritime Southeast Asia",
+        "link": "/wiki/Maritime_Southeast_Asia"
+    },
+    {
+        "id": 531,
+        "title": "Oceania",
+        "link": "/wiki/Oceania"
+    },
+    {
+        "id": 532,
+        "title": "Malagasy language",
+        "link": "/wiki/Malagasy_language"
+    },
+    {
+        "id": 533,
+        "title": "Maori language",
+        "link": "/wiki/Maori_language"
+    },
+    {
+        "id": 534,
+        "title": "Samoan language",
+        "link": "/wiki/Samoan_language"
+    },
+    {
+        "id": 535,
+        "title": "Indonesia",
+        "link": "/wiki/Indonesia"
+    },
+    {
+        "id": 536,
+        "title": "Formosan languages",
+        "link": "/wiki/Formosan_languages"
+    },
+    {
+        "id": 537,
+        "title": "Dravidian languages",
+        "link": "/wiki/Dravidian_languages"
+    },
+    {
+        "id": 538,
+        "title": "South Asia",
+        "link": "/wiki/South_Asia"
+    },
+    {
+        "id": 539,
+        "title": "Kannada language",
+        "link": "/wiki/Kannada_language"
+    },
+    {
+        "id": 540,
+        "title": "Tamil language",
+        "link": "/wiki/Tamil_language"
+    },
+    {
+        "id": 541,
+        "title": "Telugu language",
+        "link": "/wiki/Telugu_language"
+    },
+    {
+        "id": 542,
+        "title": "Turkic languages",
+        "link": "/wiki/Turkic_languages"
+    },
+    {
+        "id": 543,
+        "title": "Turkish language",
+        "link": "/wiki/Turkish_language"
+    },
+    {
+        "id": 544,
+        "title": "Austroasiatic languages",
+        "link": "/wiki/Austroasiatic_languages"
+    },
+    {
+        "id": 545,
+        "title": "Khmer language",
+        "link": "/wiki/Khmer_language"
+    },
+    {
+        "id": 546,
+        "title": "Tai\u2013Kadai languages",
+        "link": "/wiki/Tai%E2%80%93Kadai_languages"
+    },
+    {
+        "id": 547,
+        "title": "Southeast Asia",
+        "link": "/wiki/Southeast_Asia"
+    },
+    {
+        "id": 548,
+        "title": "Thai language",
+        "link": "/wiki/Thai_language"
+    },
+    {
+        "id": 549,
+        "title": "Papua New Guinea",
+        "link": "/wiki/Papua_New_Guinea"
+    },
+    {
+        "id": 550,
+        "title": "West Africa",
+        "link": "/wiki/West_Africa"
+    },
+    {
+        "id": 551,
+        "title": "Quechumaran languages",
+        "link": "/wiki/Quechumaran_languages"
+    },
+    {
+        "id": 552,
+        "title": "Arawak languages",
+        "link": "/wiki/Arawak_languages"
+    },
+    {
+        "id": 553,
+        "title": "Tupi-Guarani languages",
+        "link": "/wiki/Tupi-Guarani_languages"
+    },
+    {
+        "id": 554,
+        "title": "Uto-Aztecan languages",
+        "link": "/wiki/Uto-Aztecan_languages"
+    },
+    {
+        "id": 555,
+        "title": "Oto-Manguean languages",
+        "link": "/wiki/Oto-Manguean_languages"
+    },
+    {
+        "id": 556,
+        "title": "Mayan languages",
+        "link": "/wiki/Mayan_languages"
+    },
+    {
+        "id": 557,
+        "title": "Mesoamerica",
+        "link": "/wiki/Mesoamerica"
+    },
+    {
+        "id": 558,
+        "title": "Na-Dene languages",
+        "link": "/wiki/Na-Dene_languages"
+    },
+    {
+        "id": 559,
+        "title": "Iroquoian languages",
+        "link": "/wiki/Iroquoian_languages"
+    },
+    {
+        "id": 560,
+        "title": "Algonquian languages",
+        "link": "/wiki/Algonquian_languages"
+    },
+    {
+        "id": 561,
+        "title": "North America",
+        "link": "/wiki/North_America"
+    },
+    {
+        "id": 562,
+        "title": "Pama-Nyungan languages",
+        "link": "/wiki/Pama-Nyungan_languages"
+    },
+    {
+        "id": 563,
+        "title": "Endangered language",
+        "link": "/wiki/Endangered_language"
+    },
+    {
+        "id": 564,
+        "title": "Language shift",
+        "link": "/wiki/Language_shift"
+    },
+    {
+        "id": 565,
+        "title": "Language loss",
+        "link": "/wiki/Language_loss"
+    },
+    {
+        "id": 566,
+        "title": "Dead language",
+        "link": "/wiki/Dead_language"
+    },
+    {
+        "id": 567,
+        "title": "Extinct language",
+        "link": "/wiki/Extinct_language"
+    },
+    {
+        "id": 568,
+        "title": "Globalization",
+        "link": "/wiki/Globalization"
+    },
+    {
+        "id": 569,
+        "title": "Neo-colonialism",
+        "link": "/wiki/Neo-colonialism"
+    },
+    {
+        "id": 570,
+        "title": "List of languages by number of native speakers",
+        "link": "/wiki/List_of_languages_by_number_of_native_speakers"
+    },
+    {
+        "id": 571,
+        "title": "UNESCO",
+        "link": "/wiki/UNESCO"
+    },
+    {
+        "id": 572,
+        "title": "Speaker types",
+        "link": "/wiki/Speaker_types"
+    },
+    {
+        "id": 573,
+        "title": "Lingua franca",
+        "link": "/wiki/Lingua_franca"
+    },
+    {
+        "id": 574,
+        "title": "Esperanto",
+        "link": "/wiki/Esperanto"
+    },
+    {
+        "id": 575,
+        "title": "Tower of Babel",
+        "link": "/wiki/Tower_of_Babel"
+    },
+    {
+        "id": 576,
+        "title": "Old Testament",
+        "link": "/wiki/Old_Testament"
+    },
+    {
+        "id": 577,
+        "title": "Yugoslav Wars",
+        "link": "/wiki/Yugoslav_Wars"
+    },
+    {
+        "id": 578,
+        "title": "American Civil War",
+        "link": "/wiki/American_Civil_War"
+    },
+    {
+        "id": 579,
+        "title": "Rwanda",
+        "link": "/wiki/Rwanda"
+    },
+    {
+        "id": 580,
+        "title": "Language revitalization",
+        "link": "/wiki/Language_revitalization"
+    },
+    {
+        "id": 581,
+        "title": "Language policy",
+        "link": "/wiki/Language_policy"
+    },
+    {
+        "id": 582,
+        "title": "Speech community",
+        "link": "/wiki/Speech_community"
+    },
+    {}
+]

@@ -11,7 +11,7 @@ from rake_nltk import Rake
 import json
 
 class Comprehend:
-    def __init__(self, topic, MIN_LENGTH=1, MAX_LENGTH=10000):
+    def __init__(self, topic, MIN_LENGTH=1, MAX_LENGTH=4):
         self.proc = Processor(topic)
         self.raker = Rake(min_length=MIN_LENGTH, max_length=MAX_LENGTH)
         self.topic = topic

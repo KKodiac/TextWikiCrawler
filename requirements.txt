@@ -21,3 +21,4 @@ typed-ast
 urllib3
 wrapt
 matplotlib
+mysql-connector
