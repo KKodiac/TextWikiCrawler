@@ -154,37 +154,6 @@ class Crawler(Checker):
         tag_file.write('{}]')
         tag_file.close()
 
-# #TODO: Table of contents parsing for creating Big BulletPoints!
-#     def requestTOC(self):
-#         soupify = self.requestForHTML()
-#         table_of_contents = soupify.find(
-#             id='mw-content-text').find(
-#                 class_='mw-parser-output').find(
-#                     id='toc')
-        
-#         ### Crawls for TOC on a wikipediac page
-#         toc_list_ul = []
-#         toc_list = []
-#         try:
-#             for toc in table_of_contents.find_all('li'):
-#                 # print(toc.ul)
-#                 for x in toc.get_text().split('\n'):
-#                     if(x != ""):
-#                         toc_list_ul.append(x)
-#         except AttributeError:
-#             pass
-
-#         for i in toc_list_ul:
-#             if(i not in toc_list):
-#                 toc_list.append(i)
-                
-#         temp = [ [] for _ in range(len(toc_list))] 
-#         for i in toc_list:
-#             index = int(i[0]) - 1
-#             temp[index].append(i)
-        
-# gets document content from desired topic
-
     def requestWikiPageDoc(self):
         soupify = self.requestForHTML()
         get_document_content = soupify.find(id="mw-content-text").find(class_="mw-parser-output")

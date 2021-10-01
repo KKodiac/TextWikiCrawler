@@ -6,16 +6,16 @@
     Implemented by csurfer(https://github.com/csurfer/rake-nltk/blob/master/rake_nltk/rake.py)
 """
 
-from .Processor import Processor
+from processor import Processor
 from rake_nltk import Rake
 import json
 
-class Comprehend:
+class Extractor:
     def __init__(self, topic, MIN_LENGTH=1, MAX_LENGTH=4):
         self.proc = Processor(topic)
         self.raker = Rake(min_length=MIN_LENGTH, max_length=MAX_LENGTH)
         self.topic = topic
-        
+
     def extract_keywords(self):
         self.proc.processor()
         file = open(self.proc.btoken_file_path, 'r')
@@ -34,9 +34,6 @@ class Comprehend:
         RAKE_file = open("../DataFile/RAKE/"+self.topic+".json", 'w+')
         for c in text_score:
             temp = [("score", c[0]),("text", c[1])]
-            # print(dict(temp))
             pair.append(dict(temp))
         print()
         json.dump(pair, RAKE_file, indent=4)
-        # 
-        # json.dump(text_score, RAKE_file, indent=2)
